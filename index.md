@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% include gender_influence_revenue.html %}
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
