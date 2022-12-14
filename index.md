@@ -1,7 +1,21 @@
 ---
 layout: default
 ---
+On average, the production of a major box office movie costs $65 million, without counting the marketing and distribution fees. Unlike house construction, which usually ends up exactly like the pre-sketched plan, making a movie is unpredictable and anticipating the audience’s opinion is nearly impossible despite the effort and money spent.
+
+Thus, producing a movie the right way is a crucial job that requires long studies and decision-making about the relevant parts that define the film. This includes the storyline, the script, the actors, the budget, and many more features.
+
+This motivates our goal of studying the successful and failed films in terms of public ratings (collected through the IMDb database) and box office revenue. We mainly analyze the different characteristics that define a movie in order to come up with a set of criteria that, if present, will more likely make a movie successful. Additionally, since a high rating might not necessarily imply high revenue, we will investigate how to optimize each metric independently.
+
+
+# Actors
+## Gender
 {% include gender_influence_revenue.html %}
+{% include gender_rating.html %}
+## Age
+
+
+
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
