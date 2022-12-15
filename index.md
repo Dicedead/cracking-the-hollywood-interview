@@ -11,7 +11,7 @@ This motivates our goal of studying the successful and failed films in terms of 
 # Actors
 ## Gender
 {% include gender_influence_revenue.html %}
-{% include gender_rating.html %}
+{% include gender_rating_influence.html %}
 ## Age
 
 
