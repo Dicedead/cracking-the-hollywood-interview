@@ -14,7 +14,7 @@ This motivates our goal of studying the successful and failed films in terms of 
 {% include gender_influence_revenue.html %}
 {% include gender_rating_influence.html %}
 ## Age
-{% include average_revnue_rating_age.html %}
+{% include average_revenue_rating_age.html %}
 
 
 
