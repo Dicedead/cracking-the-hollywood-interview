@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Cracking The Hollywood Interview
+description: 
 ---
 On average, the production of a major box office movie costs $65 million, without counting the marketing and distribution fees. Unlike house construction, which usually ends up exactly like the pre-sketched plan, making a movie is unpredictable and anticipating the audience’s opinion is nearly impossible despite the effort and money spent.
 
