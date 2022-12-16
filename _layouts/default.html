@@ -1,115 +1,41 @@
-<!DOCTYPE HTML>
-<!--
-	Directive by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
-		<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
-		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="theme-color" content="#ffffff">
-		<title>Show Me Your Plate</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="index is-preload">
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
 
-		<!-- Header -->
-			<div id="header">
-				<div class ="transbox" style="width:70%; margin:0 auto; background-color: rgba(248,248,248,0.4);padding:1em">
-					<img 	src="images/ada.png" 
-										alt="ADA" 
-										style="width: auto; height: auto;max-width: 250px; max-height: 250px" 
-										class="ada"/>
-				<h1 style="text-shadow: 2px 2px 0px #cc2131;">Show Me Your Plate <br> And I'll Tell You Who You Are.</h1>
-				<p style="text-shadow: 2px 2px 0px #cc2131;
-							color:white;
-							text-transform: uppercase;
-							font-weight: 600;">A Full-English Data Story.</p>
-				</div>
-			</div>
+{% seo %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-		<!-- Main -->
-			<div id="main" style="background-color:rgba(248,248,248,1)">
-				<footer class="major container">
-					<h2> <i> “The British Empire was created <br>
-					     as a by-product of generations <br>
-					     of desperate Englishmen roaming the world <br>
-					     in search of a decent meal.”
-					     </i>
-					</h2>	
-				</footer>
-				<footer class ="major container" style="background-color:white; padding-top: 0em;">
-					<p> {{ content }} </p>
-				</footer>
-				<footer class="major container medium">
-					<h3>What remains to be said</h3>
-					<p>After learning about the interactions of nutrition and socio-economic realities of englishmen, we want to invite you, as a small palate cleanser, to discover the english cusine with us. <br> Hit the button below and see you on the other side! </p>
-					<ul class="actions special">
-						<li><a href="https://en.wikipedia.org/wiki/Toast_sandwich" class="button">Discover the Tastes of England!</a></li>
-					</ul>
-				</footer>
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      {% if site.github.is_project_page %}
+        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+      {% endif %}
+      {% if site.show_downloads %}
+        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
+        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
+      {% endif %}
+    </header>
 
-			</div>
+    <main id="content" class="main-content" role="main">
+      {{ content }}
 
-		<!-- Footer -->
-			<div id="footer">
-				<div class="container medium">
-
-					<header class="major last">
-						<h2>Who We Are</h2>
-					</header>
-
-					<p> This is text about us... maybe.</p>
-
-						<div class="row">
-							<div class="col-4 col-12-mobilep">
-								<img 	src="images/michael.jpg" 
-										alt="Michael" 
-										style="width: auto; height: auto;max-width: 100px; max-height: 100px" 
-										class="portrait"/>
-								<div class="content">
-									<h3>Michael</h3>
-								</div>
-							</div>
-							<div class="col-4 col-12-mobilep">
-								<img 	src="images/luca.jpg" 
-										alt="Luca" 
-										style="width: auto; height: auto;max-width: 100px; max-height: 100px" 
-										class="portrait"/>
-								<div class="content">
-									<h3>Luca</h3>
-								</div>
-							</div>
-							<div class="col-4 col-12-mobilep">
-								<img 	src="images/ivo.jpg" 
-										alt="Ivo" style="width: auto; height: auto;max-width: 100px; max-height: 100px" 
-										class="portrait"/>
-								<div class="content">
-									<h3>Ivo</h3>
-								</div>
-							</div>
-						</div>
-
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
-				</div>
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+      <footer class="site-footer">
+        {% if site.github.is_project_page %}
+          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+        {% endif %}
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
 </html>
