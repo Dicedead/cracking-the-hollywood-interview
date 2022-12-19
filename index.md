@@ -7,6 +7,10 @@ Thus, producing a movie the right way is a crucial job that requires long studie
 
 This motivates our goal of studying the successful and failed films in terms of public ratings (collected through the IMDb database) and box office revenue. We mainly analyze the different characteristics that define a movie in order to come up with a set of criteria that, if present, will more likely make a movie successful. Additionally, since a high rating might not necessarily imply high revenue, we will investigate how to optimize each metric independently.
 
+# Country
+
+{% include rev_map.html %}
+{% include rat_map.html %}
 
 # Actors
 
