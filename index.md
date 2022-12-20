@@ -21,6 +21,7 @@ This motivates our goal of studying the successful and failed films in terms of 
 {% include avg_revenue_rating_age.html %}
 ## Character types
 {% include rating_revenue_per_char_type.html %}
+{% include char_types.png %}
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
