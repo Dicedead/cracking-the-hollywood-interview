@@ -19,8 +19,8 @@ This motivates our goal of studying the successful and failed films in terms of 
 {% include gender_rating_influence.html %}
 ## Age
 {% include avg_revenue_rating_age.html %}
-
-
+## Character types
+{% include rating_revenue_per_char_type.html %}
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
