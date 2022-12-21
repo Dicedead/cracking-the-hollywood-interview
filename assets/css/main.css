@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #935d8c;
+		background-color: #19b730;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #1eec3d 15%, #138324 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #1eec3d 15%, #138324 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #1eec3d 15%, #138324 85%);
@@ -3546,10 +3546,10 @@ input, select, textarea {
 
 		#main header.major h2:after {
 			background-color: #dddddd;
-			background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+			background-image: -moz-linear-gradient(90deg, #1eec3d, #0c881f, #b6ed9d);
+			background-image: -webkit-linear-gradient(90deg, #1eec3d, #0c881f, #b6ed9d);
+			background-image: -ms-linear-gradient(90deg, #1eec3d, #0c881f, #b6ed9d);
+			background-image: linear-gradient(90deg, #1eec3d, #0c881f, #b6ed9d);
 		}
 
 		#main table tbody tr {
