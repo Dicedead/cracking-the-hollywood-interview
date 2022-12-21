@@ -1,12 +1,20 @@
 ---
 layout: generic
 ---
-# Why it is important to 
+# Why it is important to prepare before an interview
+**TODO rewrite intro**
 On average, the production of a major box office movie costs $65 million, without counting the marketing and distribution fees. Unlike house construction, which usually ends up exactly like the pre-sketched plan, making a movie is unpredictable and anticipating the audience’s opinion is nearly impossible despite the effort and money spent.
 
 Thus, producing a movie the right way is a crucial job that requires long studies and decision-making about the relevant parts that define the film. This includes the storyline, the script, the actors, the budget, and many more features.
 
 This motivates our goal of studying the successful and failed films in terms of public ratings (collected through the IMDb database) and box office revenue. We mainly analyze the different characteristics that define a movie in order to come up with a set of criteria that, if present, will more likely make a movie successful. Additionally, since a high rating might not necessarily imply high revenue, we will investigate how to optimize each metric independently.
+
+Usually movie making interview questions target the following topics: 
+* The country where the movie should be made in.
+* The actors that should play in the movie.
+* How to write the movie plot.
+
+**TODO introduce dataset ?**
 
 # Country
 
@@ -14,10 +22,15 @@ This motivates our goal of studying the successful and failed films in terms of 
 {% include rat_map.html %}
 
 # Actors
+Choosing actors for a successful movie is an important decision that can have a significant impact on the final product. Here are a few factors to consider when selecting actors for your movie:
 
 ## Gender
+Usually people tend to say that there is no one "right" answer when it comes to choosing actors based on their gender for a successful movie. However, studying the effect of actor genders on the revenue and rating gave interesting results.
+The aim of this part is to perform a linear regression on the movies box office revenue and rating. We want to investigate the degree to which the actor's gender predicts the change of the movie revenue and rating. 
+The following plots show the regression coefficient for males and females, which represents the contribution to the revenue and rating respectively.
 {% include gender_influence_revenue.html %}
 {% include gender_rating_influence.html %}
+As we can see, men tend to have higher contribution on the success than women. This is more emphasized on the rating than revenue.
 ## Age
 {% include avg_revenue_rating_age.html %}
 ## Character types
