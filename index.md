@@ -32,6 +32,8 @@ The following plots show the regression coefficient for males and females, which
 {% include gender_rating_influence.html %}
 As we can see, men tend to have higher contribution on the success than women. This is more emphasized on the rating than revenue.
 ## Age
+The actor's age may is one of several factors that can influence a movie's success. For example, an actor who is very young or very old may bring a certain level of credibility or gravitas to a role that helps to make the movie more successful. On the other hand, an actor who is in the prime of their career may be more physically capable of performing action scenes or other demanding roles, which could also contribute to the success of a movie.
+The following plot helps getting more insight on how the movie's revenue and rating change with respect to the actor's age.
 {% include avg_revenue_rating_age.html %}
 ## Character types
 {% include rating_revenue_per_char_type.html %}
