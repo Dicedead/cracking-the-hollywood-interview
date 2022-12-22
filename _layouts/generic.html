@@ -11,7 +11,32 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link href="/assets/webfonts/BebasNeue-Regular.ttf" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://use.typekit.net/mez6zox.css">
+		<style>
+			body {
+      			margin-top: 70px;
+    		}
+			.header {
+				text-align: center;
+			}
+			.header h1 span {
+      			margin: 0 -0.8em;
+    		}
+			@font-face {
+			  font-family: 'Monotype Corsiva';
+			  src: url('assets/webfonts/4505-font-webfont.woff2') format('woff2'),
+				   url('assets/webfonts/4505-font-webfont.woff') format('woff');
+			  font-weight: normal;
+			  font-style: normal;
+			}
+			@font-face {
+			  font-family: 'Trajans';
+			  src: url('assets/webfonts/trajan_pro_bold-webfont.woff2') format('woff2'),
+				   url('assets/webfonts/trajan_pro_bold-webfont.woff') format('woff');
+			  font-weight: normal;
+			  font-style: normal;
+			}
+		  </style>
 	</head>
 	<body class="is-preload">
 
@@ -20,8 +45,14 @@
 
 				<!-- Header -->
 					<header class="header">
-						<h1>Cracking the Hollywood Interview</h1>
-						<p>5 famous interview questions, topics and solutions</p>
+						<h1>
+							<span style="font-family: bebas-neue, sans-serif; font-size: 2.2em; color: black">Cracking</span>
+							<br>
+							<span style="font-family: Monotype Corsiva, sans-serif; font-size: 1em; color: black">— the —</span>
+							<br>
+							<span style="font-family: bebas-neue, sans-serif; font-size: 2em; color: black">Hollywood interview</span>
+				  		</h1>
+				  		<p style="font-family: Trajans, sans-serif; color: black; font-size: 1.5em">5 famous interview questions, topics and solutions</p>
 					</header>
 
 				<!-- Main -->
@@ -29,6 +60,7 @@
 
 						<!-- Content -->
 							<section id="content" class="main">
+								<img src="assets/images/movie_camera.png" alt="movie camera" style="width: 10%; display: block; margin: 0 auto; margin-bottom: 50px">
 								{{ content }}
 								<iframe src="network/index.html" width="100%" height="700"></iframe>
 								<div id="doc" class="markdown-body container-fluid comment-inner comment-enabled" data-hard-breaks="true">
