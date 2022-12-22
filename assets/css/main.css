@@ -100,9 +100,9 @@ input, select, textarea {
 
 	body {
 		background-color: #19b730;
-		/* background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #1eec3d 15%, #138324 85%);
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #1eec3d 15%, #138324 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #1eec3d 15%, #138324 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #1eec3d 15%, #138324 85%); */
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #1eec3d 15%, #138324 85%);
 		background-image: url("images/overlay.png"), linear-gradient(45deg, #1eec3d 15%, #138324 85%);
 	}
 
