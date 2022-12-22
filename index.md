@@ -32,11 +32,20 @@ The following plots show the regression coefficient for males and females, which
 {% include gender_rating_influence.html %}
 As we can see, men tend to have higher contribution on the success than women. This is more emphasized on the rating than revenue.
 ## Age
-The actor's age may is one of several factors that can influence a movie's success. For example, an actor who is very young or very old may bring a certain level of credibility or gravitas to a role that helps to make the movie more successful. On the other hand, an actor who is in the prime of their career may be more physically capable of performing action scenes or other demanding roles, which could also contribute to the success of a movie.
+The actor's age is one of several factors that can influence a movie's success. For example, an actor who is very young or very old may bring a certain level of credibility or gravitas to a role that helps to make the movie more successful. On the other hand, an actor who is in the prime of their career may be more physically capable of performing action scenes or other demanding roles, which could also contribute to the success of a movie.
 The following plot helps getting more insight on how the movie's revenue and rating change with respect to the actor's age.
 {% include avg_revenue_rating_age.html %}
 ## Character types
+Characters are a crucial element of any movie, as they help to drive the story forward and provide a connection for the audience. Strong characters can contribute significantly to the success of a movie by engaging the audience and making them care about what happens to the characters. 
+### Sentiment analysis
+Sentiment analysis, also known as opinion mining, is a field of natural language processing that involves analyzing text data to determine whether it conveys a positive, negative, or neutral sentiment. We used this technique to measure the sentiments of the character types embodied in movies. The analysis returns a sentiment score that is a value between -1 and 1, where -1 is very negative, 0 is neutral and 1 is very positive. 
+For example:
+* "arrogant kungfu guy" yields a negative sentiment due to the presence of the word "arrogant"
+Indeed, some audiences may prefer positive characters who are likable and heroic, while others may be more drawn to complex and flawed characters who are more realistic and relatable. To have better insight, we have plotted the sentiment score of 72 character types drawn from tvtropes.com as well as the median rating and revenue of the movies they were envolved in.
+
 {% include rating_revenue_per_char_type.html %}
+
+We can see that most of the character types tend to have a neutral sentiment. Also, those types were envolved the movies with the highest revenue and rating. However, TODO
 
 ## Interactions between actors
 
