@@ -230,11 +230,11 @@ Characters are a crucial element of any movie, as they help drive the story forw
 Sentiment analysis, also known as opinion mining, is a field of natural language processing that involves analyzing text data to determine whether it conveys a positive, negative, or neutral sentiment. We used this technique to measure the sentiments of the character types embodied in movies. The analysis returns a sentiment score that is a value between -1 and 1, where -1 is very negative, 0 is neutral and 1 is very positive. 
 For example:
 * "arrogant kungfu guy" yields a negative sentiment due to the presence of the word "arrogant"  
-Indeed, some audiences may prefer positive characters who are likable and heroic, while others may be more drawn to complex and flawed characters who are more realistic and relatable. To have better insight, we have plotted the sentiment score of 72 character types drawn from tvtropes.com as well as the median rating and revenue of the movies they were envolved in.
+Indeed, some audiences may prefer positive characters who are likable and heroic, while others may be more drawn to complex and flawed characters who are more realistic and relatable. To have better insight, we have plotted the sentiment score of 72 character types drawn from tvtropes.com as well as the median rating and revenue of the movies they were involved in.
 
 {% include rating_revenue_per_char_type.html %}
 
-We can see that most of the character types tend to have a neutral or positive sentiment scores. Also, those types were envolved the movies with the highest revenue and rating. However, the rating variable seems to be quite uncorrelated to the sentiment since we can find pretty much all the types in both high and low means.
+We can see that most of the character types tend to have a neutral or positive sentiment scores. Also, those types were involved in the movies with the highest revenue and rating. However, the rating variable seems to be quite uncorrelated to the sentiment since we can find pretty much all the types in both high and low means.
 
 ## Interaction between actors
 How do actors interact with each other? Clearly, Will Smith and Chris Rock do not get on well. But what about the others? We have gathered the castings of films and created a graph representing the interactions between actors. Nodes represent actors and edges "has worked with"-relationships. The size of a node is proportional to its degree. Edges are weighted in terms of the number and success of collaborations between two people. Each time two actors played in the same film, the revenue or rating of that movie is added to the weight. 
