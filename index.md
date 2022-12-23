@@ -22,15 +22,22 @@ Usually movie making interview questions target the following topics:
 {% include rat_map.html %}
 
 # Actors
-Choosing actors for a successful movie is an important decision that can have a significant impact on the final product. Here are a few factors to consider when selecting actors for your movie:
+### Why is it important to chose wisely an actor ?
+![text](actors.jpeg){ width=60%,height:30px }
+Choosing actors for a successful movie is an important decision that can have a significant impact on the final product.
+Actors are trained to portray a variety of characters and can play different roles in different productions. Acting is a craft that requires skill in understanding and interpreting different characters and their motivations, as well as the ability to convey those characters through speech, movement, and facial expressions. Actors may play different roles in theater, film, television, or other media, and may portray characters of different ages, genders, and cultural backgrounds. Some actors are known for their versatility and are able to play a wide range of characters, while others may specialize in a particular type of role or genre. This motivates our study to find patterns on which type of actors is best suited for a given movie.  
+Here are a few factors to consider when selecting actors for your movie:
 
 ## Gender
 Usually people tend to say that there is no one "right" answer when it comes to choosing actors based on their gender for a successful movie. However, studying the effect of actor genders on the revenue and rating gave interesting results.
 The aim of this part is to perform a linear regression on the movies box office revenue and rating. We want to investigate the degree to which the actor's gender predicts the change of the movie revenue and rating. 
 The following plots show the regression coefficient for males and females, which represents the contribution to the revenue and rating respectively.
 {% include gender_influence_revenue.html %}
+
+As we can see, men tend to have slightly higher contribution on the revenue than women. 
+
 {% include gender_rating_influence.html %}
-As we can see, men tend to have higher contribution on the success than women. This is more emphasized on the rating than revenue.
+
 ## Age
 The actor's age is one of several factors that can influence a movie's success. For example, an actor who is very young or very old may bring a certain level of credibility or gravitas to a role that helps to make the movie more successful. On the other hand, an actor who is in the prime of their career may be more physically capable of performing action scenes or other demanding roles, which could also contribute to the success of a movie.
 The following plot helps getting more insight on how the movie's revenue and rating change with respect to the actor's age.
@@ -40,7 +47,7 @@ Characters are a crucial element of any movie, as they help to drive the story f
 ### Sentiment analysis
 Sentiment analysis, also known as opinion mining, is a field of natural language processing that involves analyzing text data to determine whether it conveys a positive, negative, or neutral sentiment. We used this technique to measure the sentiments of the character types embodied in movies. The analysis returns a sentiment score that is a value between -1 and 1, where -1 is very negative, 0 is neutral and 1 is very positive. 
 For example:
-* "arrogant kungfu guy" yields a negative sentiment due to the presence of the word "arrogant"
+* "arrogant kungfu guy" yields a negative sentiment due to the presence of the word "arrogant"  
 Indeed, some audiences may prefer positive characters who are likable and heroic, while others may be more drawn to complex and flawed characters who are more realistic and relatable. To have better insight, we have plotted the sentiment score of 72 character types drawn from tvtropes.com as well as the median rating and revenue of the movies they were envolved in.
 
 {% include rating_revenue_per_char_type.html %}
