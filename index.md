@@ -36,7 +36,7 @@ All previously cited monetary film successes received poor ratings. For instance
 ### Why is it important to chose wisely an actor ?
 <img src="actors.jpeg"
      alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" />
+     style="display:block; margin-left: auto; margin-right: auto;" />
 
 
 Choosing actors for a successful movie is an important decision that can have a significant impact on the final product.
