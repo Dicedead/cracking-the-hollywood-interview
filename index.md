@@ -17,7 +17,7 @@ Usually movie making pitch questions target the following topics:
 
 **TODO introduce dataset ?**
 
-# Country <img src="icons/earth-americas-solid.svg" width="20" height="20">  
+#  <img src="icons/earth-americas-solid.svg" width="50" height="50">   Country
 
 Let's start with where you should make and release your movie. 
 
