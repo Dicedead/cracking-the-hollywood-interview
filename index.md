@@ -215,29 +215,29 @@ Here are a few factors to consider when selecting actors for your movie:
 
 ## Gender
 Usually, people tend to say that there is no one "right" answer when it comes to choosing actors based on their gender for a successful movie. However, studying the effect of actor genders on the revenue and rating gave interesting results.
-The aim of this part is to perform a linear regression on the movies box office revenue and rating. We want to investigate the degree to which the actor's gender predicts the change of the movie revenue and rating. 
-The following plots show the regression coefficient for males and females, which represents the contribution to the revenue and rating respectively.
+The aim of this part is to perform a linear regression on the movie's box office revenue and rating. We want to investigate the degree to which the actor’s gender predicts the change in movie revenue and rating. 
+The following plots show the regression coefficient for males and females, which represents the contribution to the earnings and rating respectively.
 {% include gender_influence_revenue.html %}
 
-As we can see, men tend to have slightly higher contribution on the revenue than women. One possible reason that men may have been more visible in leading roles in the past is due to the historical imbalance in the entertainment industry, which has been dominated by men. This has resulted in fewer opportunities for women to play leading roles, which may have contributed to the perception that men are more important to the success of a movie.
+As we can see, men tend to have a slightly higher contribution to the revenue than women. One possible reason for this is that men may have been more visible in leading roles in the past due to the historical imbalance in the entertainment industry, which has been dominated by men. This has resulted in fewer opportunities for women to play leading roles, which may have contributed to the perception that men are more important to the success of a movie.
 
 {% include gender_rating_influence.html %}
 
-However, we notice that the audience doesn't seem to have a large bias on the actors gender when rating movies. A reason may be that spectators usually focus on the movie content and the actors performance rather than their gender. 
+However, we notice that the audience doesn't seem to have a large bias on the actor's gender when rating movies. A reason may be that spectators usually focus on the movie content and the actor's performance rather than their gender. 
 
 ## Age
-The actor's age is one of several factors that can influence a movie's success. For example, an actor who is very young or very old may bring a certain level of credibility or gravitas to a role that helps to make the movie more successful. On the other hand, an actor who is in the prime of their career may be more physically capable of performing action scenes or other demanding roles, which could also contribute to the success of a movie.
-The following plot helps getting more insight on how the movie's revenue and rating change with respect to the actor's age.
+The actor's age is one of several factors that can influence a movie's success. For example, an actor who is very young or very old may bring a certain level of gravitas to a role that helps to make the movie more successful. On the other hand, an actor who is in the prime of their career may be more physically capable of performing action scenes or other demanding roles, which could also contribute to the success of a movie.
+The following plot helps get more insight into how the movie’s revenue and rating change with respect to the actor's age.
 {% include avg_revenue_rating_age.html %}
 
-We fit a lign to both revenue and rating distribution to have more information on how they evolve with the actor age's change.
+We fit a line to both revenue and rating distribution to have more information on how they evolve with the actor age.
 {% include age_rating.html %}{% include age_revenue.html %}
 We can make the following observations:
-* **Rating :** Actors with either with ages approximately smaller than 10 and higher than 70 tend to contribute in a higher rating. This can be explained by the fact that the audience gets more impressed by a nice performance from actors with uncommonly small age, and unsurpeingly satisfied by well experienced ones. Overall, the average rating encouters a small increase with respect to the age, which again confirms the tendency of preferring well known and experienced actors.
-* **Revenue :** Regarding the revenue, we can see that overall the average revenue slightly decreases compared to the rating. A probable reason can be the fact that the studied movies and the films in general target mainly youths. This category of the population might relate more to actors who are closer to their own age and may be able to better understand the experiences and challenges depicted on screen. Moreover, they are exposed to actors through social media, music, and other mediums, which can make them more familiar and more appealing. It is also possible that some young people might prefer young actors simply because they find them physically attractive. Thus, they tend to spend more money on buying tickets for this kind of movies. 
+* **Rating :** Actors with either with ages approximately smaller than 10 and higher than 70 tend to contribute to a higher rating. This can be explained by the fact that the audience gets more impressed by a nice performance from actors with uncommonly young, and unsurpeingly satisfied by well experienced ones. Overall, the average rating encouters a small increase with respect to the age, which again confirms the tendency of preferring well known and experienced actors.
+* **Revenue :** Regarding the revenue, we can see that overall the average revenue slightly decreases compared to the rating. A probable reason can be the fact that the studied movies and the films in general target mainly youths. This category of the population might relate more to actors who are closer to their own age and may be able to better understand the experiences and challenges depicted on screen. Moreover, they are exposed to actors through social media, music, and other mediums, which can make them more familiar and appealing. It is also possible that some young people might prefer young actors simply because they find them physically attractive. Thus, they tend to spend more money on buying tickets for this kind of movie. 
 
 ## Character types
-Characters are a crucial element of any movie, as they help to drive the story forward and provide a connection for the audience. Strong characters can contribute significantly to the success of a movie by engaging the audience and making them care about what happens to the characters. 
+Characters are a crucial element of any movie, as they help drive the story forward and provide a connection for the audience. Strong characters can contribute significantly to the success of a movie by engaging the audience and making them care about what happens to the characters. 
 
 ### Sentiment analysis
 Sentiment analysis, also known as opinion mining, is a field of natural language processing that involves analyzing text data to determine whether it conveys a positive, negative, or neutral sentiment. We used this technique to measure the sentiments of the character types embodied in movies. The analysis returns a sentiment score that is a value between -1 and 1, where -1 is very negative, 0 is neutral and 1 is very positive. 
