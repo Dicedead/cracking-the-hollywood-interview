@@ -2,28 +2,26 @@
 layout: generic
 ---
 # Why it is important to prepare before a movie pitch
-**TODO rewrite intro**
-On average, the production of a major box office movie costs $65 million, without counting the marketing and distribution fees. Unlike house construction, which usually ends up exactly like the pre-sketched plan, making a movie is unpredictable and anticipating the audience’s opinion is nearly impossible despite the effort and money spent.
+Let's say you are already bored of cracking the coding interview. You have crushed all your interviews at Big Tech companies and want new challenges. For that reason, you have an interview next week with a Hollywood executive producer where you are going to conceptualize a new movie. You have to come up with a film from scratch and you don't know where to start. This time, you have carefully think about and explain your choices. There is a lot of money involved: on average, the production of a major box office movie costs [$65 million](https://www.investopedia.com/financial-edge/0611/why-movies-cost-so-much-to-make.aspx), without counting the marketing and distribution fees. 
 
 > It is brain surgery! It is bloody brain surgery! You’re putting together a whole group of people, you’re trying to budget as accurately as you can and, at the end of it, you’ve got to sell a lot of tickets. That’s more complex than banking ...I’m not kidding myself: I love the challenge. If you don’t, don’t do the job.
 >
 > -- <cite>Ridley Scott</cite>
 
-There are many challenges that can make it difficult to make a good movie. Some of the main challenges include finding a compelling, well-written story that can engage and entertain the audience, and assembling a talented cast and crew by finding the right actors, director, and crew.
+There are many challenges that can make it difficult to make a good movie. Some of the main questions include finding a compelling, well-written story that can engage and entertain the audience, assembling a talented cast, etc. We present some of the most common challenges identified by filmmakers in a [survey](https://shortmovie.club/filmmaker-challenge/) in 2019.
 
 {% include pie.html %}
 
-Thus, producing a movie the right way is a crucial job that requires long studies and decision-making about the relevant parts that define the film. This includes the storyline, the script, the actors, the budget, and many more features.
+We have studied a large dataset of movies and actors to analyze what makes a movie successful in terms of public ratings and box office revenue. We mainly analyze the different characteristics that define a movie to come up with a set of criteria that will more likely make a movie successful. Additionally, since a high rating may not necessarily imply high revenue, we investigate how to optimize each metric independently. With that information, we help you on preparing the challenging Hollywood interview!
 
-This motivates our goal of studying the successful and failed films in terms of public ratings (collected through the IMDb database) and box office revenue. We mainly analyze the different characteristics that define a movie in order to come up with a set of criteria that, if present, will more likely make a movie successful. Additionally, since a high rating might not necessarily imply high revenue, we will investigate how to optimize each metric independently.
+After a brief description of our dataset, we will address the question of what makes a successful movie by analyzing the following four topics:
+* The country where the movie is produced.
+* The genre of the film.
+* The picture's plot.
+* The cast of actors.
 
-Usually movie making pitch questions target the following topics: 
-* The country where the movie should be made in.
-* The genre of the movie.
-* The movie's plot.
-* The movie's cast.
+Let's dive in!
 
-**TODO introduce dataset ?**
 
 #  <img src="icons/earth-americas-solid.svg" width="50" height="50">     Country
 
