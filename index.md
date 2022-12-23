@@ -1,7 +1,7 @@
 ---
 layout: generic
 ---
-# Why it is important to prepare before an interview
+# Why it is important to prepare before a movie pitch
 **TODO rewrite intro**
 On average, the production of a major box office movie costs $65 million, without counting the marketing and distribution fees. Unlike house construction, which usually ends up exactly like the pre-sketched plan, making a movie is unpredictable and anticipating the audience’s opinion is nearly impossible despite the effort and money spent.
 
@@ -9,18 +9,24 @@ Thus, producing a movie the right way is a crucial job that requires long studie
 
 This motivates our goal of studying the successful and failed films in terms of public ratings (collected through the IMDb database) and box office revenue. We mainly analyze the different characteristics that define a movie in order to come up with a set of criteria that, if present, will more likely make a movie successful. Additionally, since a high rating might not necessarily imply high revenue, we will investigate how to optimize each metric independently.
 
-Usually movie making interview questions target the following topics: 
+Usually movie making pitch questions target the following topics: 
 * The country where the movie should be made in.
 * The genre of the movie.
 * The actors that should play in the movie.
-* How to write the movie plot.
+* The movie's plot.
 
 **TODO introduce dataset ?**
 
 # Country
+Let's start with where you should make and release your movie. 
 
+In terms of revenue, there is a balance between production expenses and clientele to be found. Indeed:
 {% include rev_map.html %}
+Of course, the USA is a top scorer in this regard with 324k. The English-speaking worldwide audience also helps develop Australian and British movies, with comparable revenues. But there are a few surprises! Peru, with a staggering 550k mean revenue, has been home to a few box office successes such as _Anaconda_ starring Jennifer Lopez and _The Specialist_ starring Sylvester Stalone, both films with relatively small budget largely thanks to the small production costs in Peru, but large worldwide audiences. The same goes for Thailand, which is notably home to the James Bond movie _Thunderball_. Inversely, the language barrier is what stops Bollywood movies from making it to worldwide cinemas and capitalizing on small directing budget in India. 
+
+When examining the mapping between countries and mean ratings, we find our first major discrepancy between the features optimizing for revenue and those optimizing for rating:
 {% include rat_map.html %}
+All previously cited monetary film successes received poor ratings. For instance, _Anaconda_ received 4.8/10. This might also be because it is a horror movie, as we will see later. One could think countries scoring high on rating are big on the World genre, but that is not necessarily true: the award winning drama movie _Pinjar_ was shot in Pakistan, and the crime-drama-thriller _Z_ shot in Algeria was nominated for awards.
 
 # Genres
 
