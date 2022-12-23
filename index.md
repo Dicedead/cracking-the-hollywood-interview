@@ -8,7 +8,7 @@ Let's say you are already bored of cracking the coding interview. You have crush
 >
 > -- <cite>Ridley Scott</cite>
 
-There are many challenges that can make it difficult to make a good movie. Some of the main questions include finding a compelling, well-written story that can engage and entertain the audience, assembling a talented cast, etc. We present some of the most common challenges identified by filmmakers in a [survey](https://shortmovie.club/filmmaker-challenge/) in 2019.
+There are many challenges that can make it difficult to create a good movie. Some of the main questions include finding a compelling, well-written story that can engage and entertain the audience, assembling a talented cast, etc. We present some of the most common challenges identified by filmmakers in a [survey](https://shortmovie.club/filmmaker-challenge/) in 2019.
 
 {% include pie.html %}
 
