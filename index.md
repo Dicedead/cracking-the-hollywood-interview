@@ -14,7 +14,7 @@ There are many challenges that can make it difficult to make a good movie. Some 
 
 We have studied a large dataset of movies and actors to analyze what makes a movie successful in terms of public ratings and box office revenue. We mainly analyze the different characteristics that define a movie to come up with a set of criteria that will more likely make a movie successful. Additionally, since a high rating may not necessarily imply high revenue, we investigate how to optimize each metric independently. With that information, we help you on preparing the challenging Hollywood interview!
 
-After a brief description of our dataset, we will address the question of what makes a successful movie in terms of rating or/and box office revenue by analyzing the following four topics:
+After a brief description of our dataset, we will address the question of what makes a successful movie by analyzing the following four topics:
 * The country where the movie is produced.
 * The genre of the film.
 * The picture's plot.
