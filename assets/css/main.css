@@ -3686,6 +3686,8 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		justify-content: center;
+  		align-items: center;
 		-moz-flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
@@ -3702,8 +3704,18 @@ input, select, textarea {
 
 		#footer .copyright {
 			width: 100%;
-			margin: 2.5em 0 2em 0;
-			font-size: 0.8em;
+			margin: 0em 0 2em 0;
+			font-family: bebas-neue, sans-serif; 
+			font-size: 1em; 
+			color: black;
+			text-align: center;
+		}
+		#footer .members {
+			font-family: bebas-neue, sans-serif; 
+			font-size: 1.5em; 
+			color: black;
+			width: 100%;
+			margin: 2em 1em 2em 0;
 			text-align: center;
 		}
 

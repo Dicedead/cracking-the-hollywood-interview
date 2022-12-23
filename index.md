@@ -5,6 +5,14 @@ layout: generic
 **TODO rewrite intro**
 On average, the production of a major box office movie costs $65 million, without counting the marketing and distribution fees. Unlike house construction, which usually ends up exactly like the pre-sketched plan, making a movie is unpredictable and anticipating the audience’s opinion is nearly impossible despite the effort and money spent.
 
+> It is brain surgery! It is bloody brain surgery! You’re putting together a whole group of people, you’re trying to budget as accurately as you can and, at the end of it, you’ve got to sell a lot of tickets. That’s more complex than banking ...I’m not kidding myself: I love the challenge. If you don’t, don’t do the job.
+>
+> -- <cite>Ridley Scott</cite>
+
+There are many challenges that can make it difficult to make a good movie. Some of the main challenges include finding a compelling, well-written story that can engage and entertain the audience, and assembling a talented cast and crew by finding the right actors, director, and crew.
+
+{% include pie.html %}
+
 Thus, producing a movie the right way is a crucial job that requires long studies and decision-making about the relevant parts that define the film. This includes the storyline, the script, the actors, the budget, and many more features.
 
 This motivates our goal of studying the successful and failed films in terms of public ratings (collected through the IMDb database) and box office revenue. We mainly analyze the different characteristics that define a movie in order to come up with a set of criteria that, if present, will more likely make a movie successful. Additionally, since a high rating might not necessarily imply high revenue, we will investigate how to optimize each metric independently.
@@ -17,7 +25,7 @@ Usually movie making pitch questions target the following topics:
 
 **TODO introduce dataset ?**
 
-#  <img src="icons/earth-americas-solid.svg" width="50" height="50">   Country
+#  <img src="icons/earth-americas-solid.svg" width="50" height="50">     Country
 
 Let's start with where you should make and release your movie. 
 
@@ -29,8 +37,9 @@ When examining the mapping between countries and mean ratings, we find our first
 {% include rat_map.html %}
 All previously cited monetary film successes received poor ratings. For instance, _Anaconda_ received 4.8/10. This might also be because it is a horror movie, as we will see later. One could think countries scoring high on rating are big on the World genre, but that is not necessarily true: the award winning drama movie _Pinjar_ was shot in Pakistan, and the crime-drama-thriller _Z_ shot in Algeria was nominated for awards.
 
-# Genres
-How do rating and revenue vary as a function of the genre?
+# <img src="icons/film-solid.svg" width="50" height="50">      Genres
+
+### How do rating and revenue vary as a function of the genre?
 {% include genres_scatter_plot.html %}
 In short: to maximize rating, go for a documentary, and to maximize revenue, go for a family film!
 
@@ -46,8 +55,11 @@ When they come to the movie theater, viewers have some expectations regarding th
 
 {% include plot_division.html %}
 
-# Actors
+
+# <img src="icons/people-group-solid.svg" width="50" height="50">     Actors
+
 ### Why is it important to wisely choose your cast?
+
 <img src="actors.jpeg"
      alt="Markdown Monster icon"
      style="display:block; margin-left: auto; margin-right: auto;" />
@@ -63,14 +75,20 @@ The aim of this part is to perform a linear regression on the movies box office 
 The following plots show the regression coefficient for males and females, which represents the contribution to the revenue and rating respectively.
 {% include gender_influence_revenue.html %}
 
-As we can see, men tend to have slightly higher contribution on the revenue than women. 
+As we can see, men tend to have slightly higher contribution on the revenue than women. One possible reason that men may have been more visible in leading roles in the past is due to the historical imbalance in the entertainment industry, which has been dominated by men. This has resulted in fewer opportunities for women to play leading roles, which may have contributed to the perception that men are more important to the success of a movie.
 
 {% include gender_rating_influence.html %}
+
+However, we notice that the audience doesn't seem to have a large bias on the actors gender when rating movies. A reason may be that spectators usually focus on the movie content and the actors performance rather than their gender. 
 
 ## Age
 The actor's age is one of several factors that can influence a movie's success. For example, an actor who is very young or very old may bring a certain level of credibility or gravitas to a role that helps to make the movie more successful. On the other hand, an actor who is in the prime of their career may be more physically capable of performing action scenes or other demanding roles, which could also contribute to the success of a movie.
 The following plot helps getting more insight on how the movie's revenue and rating change with respect to the actor's age.
 {% include avg_revenue_rating_age.html %}
+{% include age_rating.html %}{% include age_revenue.html %}
+We can make the following observations:
+* **Rating :** Actors with either with ages approximately smaller than 10 and higher than 70 tend to contribute in a higher rating. This can be explained by the fact that the audience gets more impressed by a nice performance from actors with uncommonly small age, and unsurpeingly satisfied by well experienced ones. Overall, the average rating encouters a small increase with respect to the age, which again confirms the tendency of preferring well known and experienced actors.
+* **Revenue :** Regarding the revenue, we can see that overall the average revenue slightly decreases compared to the rating. TODO develop  
 
 ## Character types
 Characters are a crucial element of any movie, as they help to drive the story forward and provide a connection for the audience. Strong characters can contribute significantly to the success of a movie by engaging the audience and making them care about what happens to the characters. 
@@ -85,7 +103,15 @@ Indeed, some audiences may prefer positive characters who are likable and heroic
 
 We can see that most of the character types tend to have a neutral sentiment. Also, those types were envolved the movies with the highest revenue and rating. However, TODO
 
-## Interactions between actors
-How do actors interact with each other? Clearly, Will Smith and Chris Rock do not get on well. But what about the others? We have gathered the castings of films and created a graph representing the interactions between actors. Nodes represent actors and edges "has worked with"-relationships. Edges are weighted in terms of the number and success of collaborations between two people. Each time two actors played in the same film, the revenue or rating of that movie is added to the weight. 
+## Interaction between actors
+How do actors interact with each other? Clearly, Will Smith and Chris Rock do not get on well. But what about the others? We have gathered the castings of films and created a graph representing the interactions between actors. Nodes represent actors and edges "has worked with"-relationships. The size of a node is proportional to its degree. Edges are weighted in terms of the number and success of collaborations between two people. Each time two actors played in the same film, the revenue or rating of that movie is added to the weight. 
 
-We set up a graph for each genre containing the casting of the 1000 most successful films in that category. In some cases, there may be groups of actors who usually work together, because of directors' preferences, previous successful films, good synergies, etc. To observe if there exist clusters in the graph, we apply the Louvain algorithm. Let's take a look at the 'drama' graph!
+We set up a graph for each of the 5 most popular genres. A graph contains the casting of the 1000 most successful films in that category. In some cases, there may be groups of actors who usually work together, because of directors' preferences, previous successful films, good synergies, etc. To observe how clusters are distributed in the graph, we apply the Louvain algorithm. Let's take a look at the 'drama' graph!
+
+First, let's choose "Drama by revenue" among the options below. It contains the actors that have played in the top 1000 drama movies ranked by box office revenue. Have you watched "The Godfather"? If not, we strongly recommend you cancel all your activities for today and turn on the TV to watch this fantastic trilogy! But before that, finish reading this story, please! 
+
+That said, zoom in on the blue cluster at the centre of the graph. It is located below the grey-blue one and above the two green groups. There, you may notice the names of famous actors, such as Robert De Niro, Robert Duvall, Al Pacino and Diane Keaton. All of them appear in the Godfather saga. The first film became the highest-grossing film ever in 1972, and the two sequels were very successful too. Similarly, this cluster also appears in the "Drama by ranking" graph, considering that the saga has also been one of the most acclaimed stories of all time! 
+
+Going back to actors, we observe in that cluster the presence of Hollywood stars such as Robert De Niro. They have considerably higher degrees than other artists in the same cluster. For instance, when we click over small nodes, such as Chris Sarandon, we notice that they have interacted with few people and are usually from the same cluster. However, when we click over the node of De Niro, we can observe a large number of other artists he has cooperated with. He is a bridge between many groups of actors, as he has been a relevant actor in the industry for many decades, and even connects a cluster of different generations. 
+
+We let you play with the different graphs for the most popular genres. Once you have chosen many parameters for your movie and now have to select a casting, you may find some inspiration from actors that have previously worked well together in the graphs. Or if you are obsessed with an actor, and no matter what he or she will be the protagonist of your film, you can search for their name and analyze their previous cooperations with other artists that could complete your casting!
