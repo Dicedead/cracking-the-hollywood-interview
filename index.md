@@ -12,8 +12,8 @@ This motivates our goal of studying the successful and failed films in terms of 
 Usually movie making pitch questions target the following topics: 
 * The country where the movie should be made in.
 * The genre of the movie.
-* The actors that should play in the movie.
 * The movie's plot.
+* The movie's cast.
 
 **TODO introduce dataset ?**
 
@@ -39,8 +39,12 @@ Of course, much more can be said. Genres are visibly clustered on the scatter pl
 * Romantic comedy and romantic drama, as well as action/adventure and thriller with a rating close to 6 but revenue around 250k;
 * etc.
 
-A word of caution: movie genres are often arbitrarily attributed, thus it is unclear what distinguishes a genre from another. This can have drastic consequences on rating and revenue. For example, the boundary between family drama and romantic drama can be blurry, yet family drama movies are two thirds less profitable than romantic drama movies. There are more precise elements defining a movie, like its cast.
+A word of caution: movie genres are often arbitrarily attributed, thus it is unclear what distinguishes a genre from another. This can have drastic consequences on rating and revenue. For example, the boundary between family drama and romantic drama can be blurry, yet family drama movies are two thirds less profitable than romantic drama movies. There are more precise elements defining a movie, like its cast and plot. Let's analyze the latter now.
 
+# Plots
+When they come to the movie theater, viewers have some expectations regarding the movie's plot. These expectations are due to movies portraying the same kinds of events accross genres. Thus, for each genre, we have separated movies with high/low revenue aand high/low rating; formally: the top and bottom 10% of movies for each metric, then we have run topic detection on their plot summaries to see what do successful/unsuccessful movies with respect to each metric display.  Let's look at the results for a few genres!
+
+{% include plot_division.html %}
 
 # Actors
 ### Why is it important to wisely choose your cast?
