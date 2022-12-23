@@ -29,11 +29,20 @@ When examining the mapping between countries and mean ratings, we find our first
 All previously cited monetary film successes received poor ratings. For instance, _Anaconda_ received 4.8/10. This might also be because it is a horror movie, as we will see later. One could think countries scoring high on rating are big on the World genre, but that is not necessarily true: the award winning drama movie _Pinjar_ was shot in Pakistan, and the crime-drama-thriller _Z_ shot in Algeria was nominated for awards.
 
 # Genres
-
+How do rating and revenue vary as a function of the genre?
 {% include genres_scatter_plot.html %}
+In short: to maximize rating, go for a documentary, and to maximize revenue, go for a family film!
+
+Of course, much more can be said. Genres are visibly clustered on the scatter plot. One can expect similar rating and revenue among the following groups:
+* Drama, crime-fiction, LGBT, biography and comedy-drama for a mean rating around 6.3 and revenue just under 200k;
+* Romantic comedy and romantic drama, as well as action/adventure and thriller with a rating close to 6 but revenue around 250k;
+* etc.
+
+A word of caution: movie genres are often arbitrarily attributed, thus it is unclear what distinguishes a genre from another. This can have drastic consequences on rating and revenue. For example, the boundary between family drama and romantic drama can be blurry, yet family drama movies are two thirds less profitable than romantic drama movies. There are more precise elements defining a movie, like its cast.
+
 
 # Actors
-### Why is it important to chose wisely an actor ?
+### Why is it important to wisely choose your cast?
 <img src="actors.jpeg"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
@@ -57,8 +66,10 @@ As we can see, men tend to have slightly higher contribution on the revenue than
 The actor's age is one of several factors that can influence a movie's success. For example, an actor who is very young or very old may bring a certain level of credibility or gravitas to a role that helps to make the movie more successful. On the other hand, an actor who is in the prime of their career may be more physically capable of performing action scenes or other demanding roles, which could also contribute to the success of a movie.
 The following plot helps getting more insight on how the movie's revenue and rating change with respect to the actor's age.
 {% include avg_revenue_rating_age.html %}
+
 ## Character types
 Characters are a crucial element of any movie, as they help to drive the story forward and provide a connection for the audience. Strong characters can contribute significantly to the success of a movie by engaging the audience and making them care about what happens to the characters. 
+
 ### Sentiment analysis
 Sentiment analysis, also known as opinion mining, is a field of natural language processing that involves analyzing text data to determine whether it conveys a positive, negative, or neutral sentiment. We used this technique to measure the sentiments of the character types embodied in movies. The analysis returns a sentiment score that is a value between -1 and 1, where -1 is very negative, 0 is neutral and 1 is very positive. 
 For example:
@@ -70,7 +81,6 @@ Indeed, some audiences may prefer positive characters who are likable and heroic
 We can see that most of the character types tend to have a neutral sentiment. Also, those types were envolved the movies with the highest revenue and rating. However, TODO
 
 ## Interactions between actors
-
 How do actors interact with each other? Clearly, Will Smith and Chris Rock do not get on well. But what about the others? We have gathered the castings of films and created a graph representing the interactions between actors. Nodes represent actors and edges "has worked with"-relationships. Edges are weighted in terms of the number and success of collaborations between two people. Each time two actors played in the same film, the revenue or rating of that movie is added to the weight. 
 
 We set up a graph for each genre containing the casting of the 1000 most successful films in that category. In some cases, there may be groups of actors who usually work together, because of directors' preferences, previous successful films, good synergies, etc. To observe if there exist clusters in the graph, we apply the Louvain algorithm. Let's take a look at the 'drama' graph!
