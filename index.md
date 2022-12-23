@@ -2,13 +2,13 @@
 layout: generic
 ---
 # Why it is important to prepare the Hollywood interview
-Let's say you are already bored of cracking the coding interview. You have crushed all your interviews at Big Tech companies and want new challenges. For that reason, you have an interview next week with a Hollywood executive producer where you are going to conceptualize a new movie. You have to come up with a film from scratch and you don't know where to start. This time, you have carefully think about and explain your choices. There is a lot of money involved: on average, the production of a major box office movie costs [$65 million](https://www.investopedia.com/financial-edge/0611/why-movies-cost-so-much-to-make.aspx), without counting the marketing and distribution fees. 
+Let's say you are already bored of cracking the coding interview. You have crushed all your interviews at Big Tech companies and want new challenges. For that reason, you have an interview next week with a Hollywood executive producer where you will conceptualize a new movie. You have to come up with a film from scratch and you don't know where to start. This time, you have carefully thought about and explain your choices. There is a lot of money involved: on average, the production of a significant box office movie costs [$65 million](https://www.investopedia.com/financial-edge/0611/why-movies-cost-so-much-to-make.aspx), without counting the marketing and distribution fees.
 
 > It is brain surgery! It is bloody brain surgery! You’re putting together a whole group of people, you’re trying to budget as accurately as you can and, at the end of it, you’ve got to sell a lot of tickets. That’s more complex than banking ...I’m not kidding myself: I love the challenge. If you don’t, don’t do the job.
 >
 > -- <cite>Ridley Scott</cite>
 
-There are many challenges that can make it difficult to create a good movie. Some of the main questions include finding a compelling, well-written story that can engage and entertain the audience, assembling a talented cast, etc. We present some of the most common challenges identified by filmmakers in a [survey](https://shortmovie.club/filmmaker-challenge/) in 2019.
+There are many challenges that can make it difficult to produce a good movie. Some of the main questions include finding a compelling, well-written story that can engage and entertain the audience, assembling a talented cast, etc. We present some of the most common challenges identified by filmmakers in a [survey](https://shortmovie.club/filmmaker-challenge/) in 2019.
 
 {% include pie.html %}
 
@@ -22,12 +22,12 @@ After a brief description of our dataset, we will address the question of what m
 
 Let's dive in!
 
-<img src="line.svg"
+<img src="countries.svg"
      alt="Markdown Monster icon"
      style="display:block; margin-left: auto; margin-right: auto; "
      width="100%"/>
 
-## <center> - <img src="icons/earth-americas-solid.svg" width="50" height="50">     Country -</center>
+## Country
 
 
 Let's start with where you should make and release your movie. 
@@ -38,9 +38,14 @@ Of course, the USA is a top scorer in this regard with 324k. The English-speakin
 
 When examining the mapping between countries and mean ratings, we find our first major discrepancy between the features optimizing for revenue and those optimizing for rating:
 {% include rat_map.html %}
-All previously cited monetary film successes received poor ratings. For instance, _Anaconda_ received 4.8/10. This might also be because it is a horror movie, as we will see later. One could think countries scoring high on rating are big on the World genre, but that is not necessarily true: the award winning drama movie _Pinjar_ was shot in Pakistan, and the crime-drama-thriller _Z_ shot in Algeria was nominated for awards.
+All previously cited monetary film successes received poor ratings. For instance, _Anaconda_ got 4.8/10. This might also be because it is a horror movie, as we will see later. One could think countries scoring high on rating are big on the World genre, but that is not necessarily true: the award winning drama movie _Pinjar_ was shot in Pakistan, and the crime-drama-thriller _Z_ shot in Algeria was nominated for awards.
 
-# <img src="icons/film-solid.svg" width="50" height="50">      Genres
+<img src="genres.svg"
+     alt="Markdown Monster icon"
+     style="display:block; margin-left: auto; margin-right: auto; "
+     width="100%"/>
+
+## Genres
 
 ### How do rating and revenue vary as a function of the genre?
 {% include genres_scatter_plot.html %}
@@ -53,12 +58,13 @@ Of course, much more can be said. Genres are visibly clustered on the scatter pl
 
 A word of caution: movie genres are often arbitrarily attributed, thus it is unclear what distinguishes a genre from another. This can have drastic consequences on rating and revenue. For example, the boundary between family drama and romantic drama can be blurry, yet family drama movies are two thirds less profitable than romantic drama movies. There are more precise elements defining a movie, like its cast and plot. Let's analyze the latter now.
 
-<img src="line.svg"
+<img src="plots.svg"
      alt="Markdown Monster icon"
-     style="display:block; margin-left: auto; margin-right: auto" />
+     style="display:block; margin-left: auto; margin-right: auto; "
+     width="100%"/>
 
 
-# Plots
+## Plots
 When they come to the movie theater, viewers have some expectations regarding the movie's plot. These expectations are due to movies portraying the same kinds of events accross genres. Thus, for each genre, we have separated movies with high/low revenue and high/low rating; formally: the top and bottom 10% of movies for each metric, then we have run topic detection on their plot summaries to see what do successful/unsuccessful movies with respect to each metric display. Let's look at the results for a few genres!
 
 <form>
