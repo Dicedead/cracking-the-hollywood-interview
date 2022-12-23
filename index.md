@@ -9,6 +9,8 @@ On average, the production of a major box office movie costs $65 million, withou
 >
 > -- <cite>Ridley Scott</cite>
 
+There are many challenges that can make it difficult to make a good movie. Some of the main challenges include finding a compelling, well-written story that can engage and entertain the audience, and assembling a talented cast and crew by finding the right actors, director, and crew.
+
 {% include pie.html %}
 
 Thus, producing a movie the right way is a crucial job that requires long studies and decision-making about the relevant parts that define the film. This includes the storyline, the script, the actors, the budget, and many more features.
