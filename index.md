@@ -2,7 +2,7 @@
 layout: generic
 ---
 # Why it is important to prepare the Hollywood interview
-Let's say you are already bored of cracking the coding interview. You have crushed all your interviews at Big Tech companies and want new challenges. For that reason, you have an interview next week with a Hollywood executive producer where you will conceptualize a new movie. You have to come up with a film from scratch but you don't know where to start. This time, you have carefully thought about and explain your choices. There is a lot of money involved: on average, the production of a significant box office movie costs [$65 million](https://www.investopedia.com/financial-edge/0611/why-movies-cost-so-much-to-make.aspx), without counting the marketing and distribution fees.
+Let's say you are already bored of cracking the coding interview. You have crushed all your interviews at Big Tech companies and want new challenges. For that reason, you have an interview next week with a Hollywood executive producer where you will conceptualize a new movie. You have to come up with a film from scratch but you don't know where to start. This time, you have to carefully think about and explain your choices. There is a lot of money involved: on average, the production of a significant box office movie costs [$65 million](https://www.investopedia.com/financial-edge/0611/why-movies-cost-so-much-to-make.aspx), without counting the marketing and distribution fees.
 
 > It is brain surgery! It is bloody brain surgery! You’re putting together a whole group of people, you’re trying to budget as accurately as you can and, at the end of it, you’ve got to sell a lot of tickets. That’s more complex than banking ...I’m not kidding myself: I love the challenge. If you don’t, don’t do the job.
 >
@@ -14,7 +14,7 @@ There are many challenges that can make it difficult to produce a good movie. So
 
 We have studied a large dataset of movies and actors to analyze what makes a movie successful in terms of public ratings and box office revenue. We mainly analyze the different characteristics that define a movie to come up with a set of criteria that make it more likely for a movie to be successful.  Additionally, since a high rating may not necessarily imply a high revenue, we investigate how to optimize each metric independently. With that information, we will help you prepare the challenging Hollywood interview!
 
-After a brief description of our dataset, we will address the question of what makes a movie successful movie by analyzing the following four topics:
+We will address the question of what makes a movie successful movie by analyzing the following four topics:
 * The country where the movie is produced.
 * The genre of the film.
 * The plot.
@@ -24,11 +24,13 @@ Let's dive in!
 
 <img src="countries.png" width="100%"/>
 
-Let's start with where you should make and release your movie. 
+Before making any conclusions, we want to mention that we have adapted the box office revenue of the films to the USA inflation rate corresponding to the year the movies were released. The Consumer Price Index (equivalent to inflation) reference corresponds to 1982. That way, we can compare films from different decades thanks to a similar monetary scale.
+
+Now, let's start with where you should make and release your movie. 
 
 In terms of revenue, there is a balance between production expenses and clientele to be found. Indeed:
 {% include rev_map.html %}
-Of course, the USA is a top scorer in this regard with 324k. The English-speaking worldwide audience also helps develop Australian and British movies, with comparable revenues. But there are a few surprises! Peru, with a staggering 550k mean revenue, has been home to a few box office successes such as _Anaconda_ starring Jennifer Lopez and _The Specialist_ starring Sylvester Stalone, both film with relatively small budgets largely thanks to the small production costs in Peru, but large worldwide audiences. The same goes for Thailand, which is notably home to the James Bond movie _Thunderball_. Inversely, the language barrier is what stops Bollywood movies from making it to worldwide cinemas and capitalizing on small directing budget in India. 
+Of course, the USA is a top scorer in this regard with $324k. The English-speaking worldwide audience also helps develop Australian and British movies, with comparable revenues. But there are a few surprises! Peru, with a staggering $550k mean revenue, has been home to a few box office successes such as _Anaconda_ starring Jennifer Lopez and _The Specialist_ starring Sylvester Stalone, both film with relatively small budgets largely thanks to the small production costs in Peru, but large worldwide audiences. The same goes for Thailand, which is notably home to the James Bond movie _Thunderball_. Inversely, the language barrier is what stops Bollywood movies from making it to worldwide cinemas and capitalizing on small directing budget in India. 
 
 When examining the mapping between countries and mean ratings, we find our first major discrepancy between the features optimizing for revenue and those optimizing for rating:
 {% include rat_map.html %}
