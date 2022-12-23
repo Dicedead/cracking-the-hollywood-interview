@@ -17,7 +17,7 @@ Usually movie making pitch questions target the following topics:
 
 **TODO introduce dataset ?**
 
-# Country
+# Country ![fa-crown](icons/earth-americas-solid.svg)
 Let's start with where you should make and release your movie. 
 
 In terms of revenue, there is a balance between production expenses and clientele to be found. Indeed:
