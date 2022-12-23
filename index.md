@@ -2,7 +2,7 @@
 layout: generic
 ---
 # Why it is important to prepare the Hollywood interview
-Let's say you are already bored of cracking the coding interview. You have crushed all your interviews at Big Tech companies and want new challenges. For that reason, you have an interview next week with a Hollywood executive producer where you will conceptualize a new movie. You have to come up with a film from scratch and you don't know where to start. This time, you have carefully thought about and explain your choices. There is a lot of money involved: on average, the production of a significant box office movie costs [$65 million](https://www.investopedia.com/financial-edge/0611/why-movies-cost-so-much-to-make.aspx), without counting the marketing and distribution fees.
+Let's say you are already bored of cracking the coding interview. You have crushed all your interviews at Big Tech companies and want new challenges. For that reason, you have an interview next week with a Hollywood executive producer where you will conceptualize a new movie. You have to come up with a film from scratch but you don't know where to start. This time, you have carefully thought about and explain your choices. There is a lot of money involved: on average, the production of a significant box office movie costs [$65 million](https://www.investopedia.com/financial-edge/0611/why-movies-cost-so-much-to-make.aspx), without counting the marketing and distribution fees.
 
 > It is brain surgery! It is bloody brain surgery! You’re putting together a whole group of people, you’re trying to budget as accurately as you can and, at the end of it, you’ve got to sell a lot of tickets. That’s more complex than banking ...I’m not kidding myself: I love the challenge. If you don’t, don’t do the job.
 >
@@ -12,12 +12,12 @@ There are many challenges that can make it difficult to produce a good movie. So
 
 {% include pie.html %}
 
-We have studied a large dataset of movies and actors to analyze what makes a movie successful in terms of public ratings and box office revenue. We mainly analyze the different characteristics that define a movie to come up with a set of criteria that will more likely make a movie successful. Additionally, since a high rating may not necessarily imply high revenue, we investigate how to optimize each metric independently. With that information, we help you on preparing the challenging Hollywood interview!
+We have studied a large dataset of movies and actors to analyze what makes a movie successful in terms of public ratings and box office revenue. We mainly analyze the different characteristics that define a movie to come up with a set of criteria that make it more likely for a movie to be successful.  Additionally, since a high rating may not necessarily imply a high revenue, we investigate how to optimize each metric independently. With that information, we will help you prepare the challenging Hollywood interview!
 
-After a brief description of our dataset, we will address the question of what makes a successful movie by analyzing the following four topics:
+After a brief description of our dataset, we will address the question of what makes a movie successful movie by analyzing the following four topics:
 * The country where the movie is produced.
 * The genre of the film.
-* The picture's plot.
+* The plot.
 * The cast of actors.
 
 Let's dive in!
@@ -28,11 +28,11 @@ Let's start with where you should make and release your movie.
 
 In terms of revenue, there is a balance between production expenses and clientele to be found. Indeed:
 {% include rev_map.html %}
-Of course, the USA is a top scorer in this regard with 324k. The English-speaking worldwide audience also helps develop Australian and British movies, with comparable revenues. But there are a few surprises! Peru, with a staggering 550k mean revenue, has been home to a few box office successes such as _Anaconda_ starring Jennifer Lopez and _The Specialist_ starring Sylvester Stalone, both films with relatively small budget largely thanks to the small production costs in Peru, but large worldwide audiences. The same goes for Thailand, which is notably home to the James Bond movie _Thunderball_. Inversely, the language barrier is what stops Bollywood movies from making it to worldwide cinemas and capitalizing on small directing budget in India. 
+Of course, the USA is a top scorer in this regard with 324k. The English-speaking worldwide audience also helps develop Australian and British movies, with comparable revenues. But there are a few surprises! Peru, with a staggering 550k mean revenue, has been home to a few box office successes such as _Anaconda_ starring Jennifer Lopez and _The Specialist_ starring Sylvester Stalone, both film with relatively small budgets largely thanks to the small production costs in Peru, but large worldwide audiences. The same goes for Thailand, which is notably home to the James Bond movie _Thunderball_. Inversely, the language barrier is what stops Bollywood movies from making it to worldwide cinemas and capitalizing on small directing budget in India. 
 
 When examining the mapping between countries and mean ratings, we find our first major discrepancy between the features optimizing for revenue and those optimizing for rating:
 {% include rat_map.html %}
-All previously cited monetary film successes received poor ratings. For instance, _Anaconda_ got 4.8/10. This might also be because it is a horror movie, as we will see later. One could think countries scoring high on rating are big on the World genre, but that is not necessarily true: the award winning drama movie _Pinjar_ was shot in Pakistan, and the crime-drama-thriller _Z_ shot in Algeria was nominated for awards.
+All previously cited monetary film successes received poor ratings. For instance, _Anaconda_ got 4.8/10. This might also be because it is a horror movie, as we will see later. One could think countries scoring high on ratings are big in the World genre, but that is not necessarily true: the award winning drama movie _Pinjar_ was shot in Pakistan, and the crime-drama-thriller _Z_ shot in Algeria was nominated for awards.
 
 <img src="genres.png" width="100%"/>
 
@@ -40,8 +40,8 @@ All previously cited monetary film successes received poor ratings. For instance
 {% include genres_scatter_plot.html %}
 In short: to maximize rating, go for a documentary, and to maximize revenue, go for a family film!
 
-Of course, much more can be said. Genres are visibly clustered on the scatter plot. One can expect similar rating and revenue among the following groups:
-* Drama, crime-fiction, LGBT, biography and comedy-drama for a mean rating around 6.3 and revenue just under 200k;
+Of course, much more can be said. Genres are visibly clustered on the scatter plot. One can expect similar ratingsm and revenue among the following groups:
+* Drama, crime-fiction, LGBT, biography and comedy-drama for a mean rating of around 6.3 and revenue just under 200k;
 * Romantic comedy and romantic drama, as well as action/adventure and thriller with a rating close to 6 but revenue around 250k;
 * etc.
 
@@ -180,7 +180,7 @@ When they come to the movie theater, viewers have some expectations regarding th
     }
 </script>
 
-Take action films when compared by rating for example. The second successful topic is set in the Batman universe, and the third one in the Bourne universe, two esteemed franchises both by critics and the grand public. It makes sense that they beat action stories with boats and ships, as mentionned in the third less highly rated topic, and plots about crooks, heists and gamblers. Note that Batman and Bond movies are also among the most successful topics in action in terms of revenue too!
+Take action films when compared by rating for example. The second most successful topic is set in the Batman universe, and the third one in the Bourne universe, two esteemed franchises both by critics and the public. It makes sense that they beat action stories with boats and ships, as mentioned in the third less highly rated topic, and plots about crooks, heists and gamblers. Note that Batman and Bond movies are also among the most successful topics in action in terms of revenue too!
 
 Similar observations can be made for any genre - one should be aware of what works and what does not in each genre before making a movie, as the plot later determines characters and thus actors.
 
@@ -196,12 +196,12 @@ Similar observations can be made for any genre - one should be aware of what wor
      />
 
 
-Choosing actors for a successful movie is an important decision that can have a significant impact on the final product.
-Actors are trained to portray a variety of characters and can play different roles in different productions. Acting is a craft that requires skill in understanding and interpreting different characters and their motivations, as well as the ability to convey those characters through speech, movement, and facial expressions. Actors may play different roles in theater, film, television, or other media, and may portray characters of different ages, genders, and cultural backgrounds. Some actors are known for their versatility and are able to play a wide range of characters, while others may specialize in a particular type of role or genre. This motivates our study to find patterns on which type of actors is best suited for a given movie.  
+The casting of actors is an important decision that can have a significant impact on the movie.
+Actors are trained to portray a variety of characters and can play different roles in different productions. Acting is a craft that requires skill in understanding and interpreting different characters and their motivations, as well as the ability to convey those characters through speech, movement, and facial expressions. Actors may play different roles in theater, film, television, or other media, and may portray characters of different ages, genders, and cultural backgrounds. Some actors are known for their versatility and are able to play a wide range of characters, while others may specialize in a particular type of role or genre. This motivates our study to find patterns on which type of actor is best suited for a given movie.  
 Here are a few factors to consider when selecting actors for your movie:
 
 ## Gender
-Usually people tend to say that there is no one "right" answer when it comes to choosing actors based on their gender for a successful movie. However, studying the effect of actor genders on the revenue and rating gave interesting results.
+Usually, people tend to say that there is no one "right" answer when it comes to choosing actors based on their gender for a successful movie. However, studying the effect of actor genders on the revenue and rating gave interesting results.
 The aim of this part is to perform a linear regression on the movies box office revenue and rating. We want to investigate the degree to which the actor's gender predicts the change of the movie revenue and rating. 
 The following plots show the regression coefficient for males and females, which represents the contribution to the revenue and rating respectively.
 {% include gender_influence_revenue.html %}
