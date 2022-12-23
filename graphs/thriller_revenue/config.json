@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "file": "",
+    "link": "",
+    "text": "Javier"
+  },
+  "text": {
+    "more": "Graph of actors\u0027 interactions for the \u0027thriller\u0027 genre, considering the best 1000 movies by box office revenue.\nNodes represent actors and edges “has worked with”-relationships. \nEdges are weighted in terms of the number and success of collaborations between two people. \nEach time two actors played in the same film, the box office revenue of that movie is added to the weight.",
+    "intro": "",
+    "title": "Graph of actors\u0027 interactions for the \u0027thriller\u0027 genre, considering box office revenue"
+  },
+  "legend": {
+    "edgeLabel": "“Has worked with”-relationships: actors have played in the same film",
+    "colorLabel": "Clusters",
+    "nodeLabel": "Actors"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": false,
+    "hoverBehavior": "default"
+  },
+  "informationPanel": {
+    "groupByEdgeDirection": false,
+    "imageAttribute": false
+  },
+  "sigma": {
+    "drawingProperties": {
+      "defaultEdgeType": "curve",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd",
+      "activeFontStyle": "bold",
+      "defaultLabelColor": "#000",
+      "labelThreshold": 10.1,
+      "defaultLabelHoverColor": "#fff",
+      "fontStyle": "bold",
+      "hoverFontStyle": "bold",
+      "defaultLabelSize": 14
+    },
+    "graphProperties": {
+      "maxEdgeSize": 0.5,
+      "minEdgeSize": 0.2,
+      "minNodeSize": 1,
+      "maxNodeSize": 10
+    },
+    "mouseProperties": {
+      "maxRatio": 20,
+      "minRatio": 0.75
+    }
+  }
+}
