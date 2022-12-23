@@ -23,8 +23,7 @@ After a brief description of our dataset, we will address the question of what m
 Let's dive in!
 
 
-<div class="title_lines">Country</div>
-<center> --- <img src="icons/earth-americas-solid.svg" width="50" height="50">     Country --- </center>
+## <center> - <img src="icons/earth-americas-solid.svg" width="50" height="50">     Country -</center>
 
 
 Let's start with where you should make and release your movie. 
