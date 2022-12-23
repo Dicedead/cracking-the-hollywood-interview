@@ -70,7 +70,7 @@
 								
 								{{ content }}
 
-								<iframe src="network/index.html" width="100%" height="700"></iframe>
+								<iframe class="iframe_plt" src="network/index.html" width="100%" height="700"></iframe>
 
 								<!-- Radio buttons to allow the user to select an iframe -->
 								<form>
@@ -97,16 +97,16 @@
 								</form>
 								
 								<!-- Iframes to be displayed based on the selected radio button -->
-								<iframe id="iframe1" src="graphs/action_rating/index.html" width="100%" height="700"></iframe>
-								<iframe id="iframe2" src="graphs/comedy_rating/index.html" width="100%" height="700"></iframe>
-								<iframe id="iframe3" src="graphs/drama_rating/index.html" width="100%" height="700"></iframe>
-								<iframe id="iframe4" src="graphs/romance_rating/index.html" width="100%" height="700"></iframe>
-								<iframe id="iframe5" src="graphs/thriller_rating/index.html" width="100%" height="700"></iframe>
-								<iframe id="iframe6" src="graphs/action_revenue/index.html" width="100%" height="700"></iframe>
-								<iframe id="iframe7" src="graphs/comedy_revenue/index.html" width="100%" height="700"></iframe>
-								<iframe id="iframe8" src="graphs/drama_revenue/index.html" width="100%" height="700"></iframe>
-								<iframe id="iframe9" src="graphs/romance_revenue/index.html" width="100%" height="700"></iframe>
-								<iframe id="iframe10" src="graphs/thriller_revenue/index.html" width="100%" height="700"></iframe>
+								<iframe id="iframe1" class="iframe_plt" src="graphs/action_rating/index.html" width="100%" height="700"></iframe>
+								<iframe id="iframe2" class="iframe_plt" src="graphs/comedy_rating/index.html" width="100%" height="700"></iframe>
+								<iframe id="iframe3" class="iframe_plt" src="graphs/drama_rating/index.html" width="100%" height="700"></iframe>
+								<iframe id="iframe4" class="iframe_plt" src="graphs/romance_rating/index.html" width="100%" height="700"></iframe>
+								<iframe id="iframe5" class="iframe_plt" src="graphs/thriller_rating/index.html" width="100%" height="700"></iframe>
+								<iframe id="iframe6" class="iframe_plt" src="graphs/action_revenue/index.html" width="100%" height="700"></iframe>
+								<iframe id="iframe7" class="iframe_plt" src="graphs/comedy_revenue/index.html" width="100%" height="700"></iframe>
+								<iframe id="iframe8" class="iframe_plt" src="graphs/drama_revenue/index.html" width="100%" height="700"></iframe>
+								<iframe id="iframe9" class="iframe_plt" src="graphs/romance_revenue/index.html" width="100%" height="700"></iframe>
+								<iframe id="iframe10" class="iframe_plt" src="graphs/thriller_revenue/index.html" width="100%" height="700"></iframe>
 								
 								<div id="doc" class="markdown-body container-fluid comment-inner comment-enabled" data-hard-breaks="true">
 									<p><span>Conclusion</span></p>
@@ -140,7 +140,7 @@
 	<!-- JavaScript to show and hide the iframes based on the selected radio button -->
 	<script>
 		// Get all iframes
-		var iframes = document.getElementsByTagName("iframe");
+		var iframes = document.getElementsByClassName("iframe_plt");
 	
 		// Function to show and hide iframes based on the selected radio button
 		function showHideIframes() {

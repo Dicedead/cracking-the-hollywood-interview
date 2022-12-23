@@ -51,10 +51,140 @@ Of course, much more can be said. Genres are visibly clustered on the scatter pl
 A word of caution: movie genres are often arbitrarily attributed, thus it is unclear what distinguishes a genre from another. This can have drastic consequences on rating and revenue. For example, the boundary between family drama and romantic drama can be blurry, yet family drama movies are two thirds less profitable than romantic drama movies. There are more precise elements defining a movie, like its cast and plot. Let's analyze the latter now.
 
 # Plots
-When they come to the movie theater, viewers have some expectations regarding the movie's plot. These expectations are due to movies portraying the same kinds of events accross genres. Thus, for each genre, we have separated movies with high/low revenue aand high/low rating; formally: the top and bottom 10% of movies for each metric, then we have run topic detection on their plot summaries to see what do successful/unsuccessful movies with respect to each metric display.  Let's look at the results for a few genres!
+When they come to the movie theater, viewers have some expectations regarding the movie's plot. These expectations are due to movies portraying the same kinds of events accross genres. Thus, for each genre, we have separated movies with high/low revenue and high/low rating; formally: the top and bottom 10% of movies for each metric, then we have run topic detection on their plot summaries to see what do successful/unsuccessful movies with respect to each metric display. Let's look at the results for a few genres!
 
-{% include plot_division.html %}
+<form>
+	<input type="radio" id="iframe1_c" name="plot_radio" value="iframe1_c" checked>
+	<label for="iframe1_c">Action by rating</label>
+	<input type="radio" id="iframe2_c" name="plot_radio" value="iframe2_c">
+	<label for="iframe2_c">Comedy by rating</label>
+	<input type="radio" id="iframe3_c" name="plot_radio" value="iframe3_c">
+	<label for="iframe3_c">Drama by rating</label>
+	<input type="radio" id="iframe4_c" name="plot_radio" value="iframe4_c">
+	<label for="iframe4_c">Romance by rating</label>
+	<input type="radio" id="iframe5_c" name="plot_radio" value="iframe5_c">
+	<label for="iframe5_c">Thriller by rating</label>
+	<input type="radio" id="iframe6_c" name="plot_radio" value="iframe6_c">
+	<label for="iframe6_c">Action by revenue</label>
+	<input type="radio" id="iframe7_c" name="plot_radio" value="iframe7_c">
+	<label for="iframe7_c">Comedy by revenue</label>
+	<input type="radio" id="iframe8_c" name="plot_radio" value="iframe8_c">
+	<label for="iframe8_c">Drama by revenue</label>
+	<input type="radio" id="iframe9_c" name="plot_radio" value="iframe9_c">
+	<label for="iframe9_c">Romance by revenue</label>
+	<input type="radio" id="iframe10_c" name="plot_radio" value="iframe10_c">
+	<label for="iframe10_c">Thriller by revenue</label>
+</form>
 
+<iframe id="iframe1_c" class="plot_options" src="plots/Acti_rating_succ_topic_1.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe1_c" class="plot_options" src="plots/Acti_rating_fail_topic_1.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+<iframe id="iframe1_c" class="plot_options" src="plots/Acti_rating_succ_topic_2.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe1_c" class="plot_options" src="plots/Acti_rating_fail_topic_2.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+<iframe id="iframe1_c" class="plot_options" src="plots/Acti_rating_succ_topic_3.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe1_c" class="plot_options" src="plots/Acti_rating_fail_topic_3.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+
+<iframe id="iframe2_c" class="plot_options" src="plots/Come_rating_succ_topic_1.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe2_c" class="plot_options" src="plots/Come_rating_fail_topic_1.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+<iframe id="iframe2_c" class="plot_options" src="plots/Come_rating_succ_topic_2.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe2_c" class="plot_options" src="plots/Come_rating_fail_topic_2.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+<iframe id="iframe2_c" class="plot_options" src="plots/Come_rating_succ_topic_3.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe2_c" class="plot_options" src="plots/Come_rating_fail_topic_3.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+
+<iframe id="iframe3_c" class="plot_options" src="plots/Dram_rating_succ_topic_1.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe3_c" class="plot_options" src="plots/Dram_rating_fail_topic_1.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+<iframe id="iframe3_c" class="plot_options" src="plots/Dram_rating_succ_topic_2.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe3_c" class="plot_options" src="plots/Dram_rating_fail_topic_2.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+<iframe id="iframe3_c" class="plot_options" src="plots/Dram_rating_succ_topic_3.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe3_c" class="plot_options" src="plots/Dram_rating_fail_topic_3.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+
+<iframe id="iframe4_c" class="plot_options" src="plots/Roma_rating_succ_topic_1.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe4_c" class="plot_options" src="plots/Roma_rating_fail_topic_1.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+<iframe id="iframe4_c" class="plot_options" src="plots/Roma_rating_succ_topic_2.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe4_c" class="plot_options" src="plots/Roma_rating_fail_topic_2.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+<iframe id="iframe4_c" class="plot_options" src="plots/Roma_rating_succ_topic_3.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe4_c" class="plot_options" src="plots/Roma_rating_fail_topic_3.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+
+<iframe id="iframe5_c" class="plot_options" src="plots/Thri_rating_succ_topic_1.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe5_c" class="plot_options" src="plots/Thri_rating_fail_topic_1.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+<iframe id="iframe5_c" class="plot_options" src="plots/Thri_rating_succ_topic_2.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe5_c" class="plot_options" src="plots/Thri_rating_fail_topic_2.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+<iframe id="iframe5_c" class="plot_options" src="plots/Thri_rating_succ_topic_3.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe5_c" class="plot_options" src="plots/Thri_rating_fail_topic_3.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+
+<iframe id="iframe6_c" class="plot_options" src="plots/Acti_revenue_succ_topic_1.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe6_c" class="plot_options" src="plots/Acti_revenue_fail_topic_1.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+<iframe id="iframe6_c" class="plot_options" src="plots/Acti_revenue_succ_topic_2.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe6_c" class="plot_options" src="plots/Acti_revenue_fail_topic_2.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+<iframe id="iframe6_c" class="plot_options" src="plots/Acti_revenue_succ_topic_3.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe6_c" class="plot_options" src="plots/Acti_revenue_fail_topic_3.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+
+<iframe id="iframe7_c" class="plot_options" src="plots/Come_revenue_succ_topic_1.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe7_c" class="plot_options" src="plots/Come_revenue_fail_topic_1.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+<iframe id="iframe7_c" class="plot_options" src="plots/Come_revenue_succ_topic_2.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe7_c" class="plot_options" src="plots/Come_revenue_fail_topic_2.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+<iframe id="iframe7_c" class="plot_options" src="plots/Come_revenue_succ_topic_3.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe7_c" class="plot_options" src="plots/Come_revenue_fail_topic_3.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+
+<iframe id="iframe8_c" class="plot_options" src="plots/Dram_revenue_succ_topic_1.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe8_c" class="plot_options" src="plots/Dram_revenue_fail_topic_1.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+<iframe id="iframe8_c" class="plot_options" src="plots/Dram_revenue_succ_topic_2.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe8_c" class="plot_options" src="plots/Dram_revenue_fail_topic_2.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+<iframe id="iframe8_c" class="plot_options" src="plots/Dram_revenue_succ_topic_3.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe8_c" class="plot_options" src="plots/Dram_revenue_fail_topic_3.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+
+<iframe id="iframe9_c" class="plot_options" src="plots/Roma_revenue_succ_topic_1.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe9_c" class="plot_options" src="plots/Roma_revenue_fail_topic_1.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+<iframe id="iframe9_c" class="plot_options" src="plots/Roma_revenue_succ_topic_2.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe9_c" class="plot_options" src="plots/Roma_revenue_fail_topic_2.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+<iframe id="iframe9_c" class="plot_options" src="plots/Roma_revenue_succ_topic_3.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe9_c" class="plot_options" src="plots/Roma_revenue_fail_topic_3.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+
+<iframe id="iframe10_c" class="plot_options" src="plots/Thri_revenue_succ_topic_1.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe10_c" class="plot_options" src="plots/Thri_revenue_fail_topic_1.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+<iframe id="iframe10_c" class="plot_options" src="plots/Thri_revenue_succ_topic_2.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe10_c" class="plot_options" src="plots/Thri_revenue_fail_topic_2.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+<iframe id="iframe10_c" class="plot_options" src="plots/Thri_revenue_succ_topic_3.html" style="height: 500; width: 49%; float: left; " height="500" width="49%" align="left"></iframe>
+<iframe id="iframe10_c" class="plot_options" src="plots/Thri_revenue_fail_topic_3.html" style="overflow: hidden; height: 500; width: 49%; " height="500" width="49%"  align="right"></iframe>
+
+
+<script>
+    // Get all iframes
+    var iframes2 = document.getElementsByClassName("plot_options");
+
+    // Function to show and hide iframes based on the selected radio button
+    function showHideIframes2() {
+    // Loop through all iframes
+    for (var i = 0; i < iframes2.length; i++) {
+        // Get the current iframe
+        var iframe = iframes2[i];
+
+        // Get the value of the selected radio button
+        var selectedRadio = document.querySelector('input[name="plot_radio"]:checked').value;
+
+        // If the value of the selected radio button matches the id of the current iframe, show it
+        if (selectedRadio == iframe.id) {
+        iframe.style.display = "block";
+        }
+        // Otherwise, hide it
+        else {
+        iframe.style.display = "none";
+        }
+    }
+    }
+
+    // Show the iframes initially
+    showHideIframes2();
+
+    // Add an event listener to the radio buttons to show and hide the iframes when the radio buttons are clicked
+    var radios2 = document.getElementsByName("plot_radio");
+    for (var i = 0; i < radios2.length; i++) {
+        radios2[i].addEventListener("click", showHideIframes2);
+    }
+</script>
+
+Take action films when compared by rating for example. The second successful topic is set in the Batman universe, and the third one in the Bourne universe, two esteemed franchises both by critics and the grand public. It makes sense that they beat action stories with boats and ships, as mentionned in the third less highly rated topic, and plots about crooks, heists and gamblers. Note that Batman and Bond movies are also among the most successful topics in action in terms of revenue too!
+
+Similar observations can be made for any genre - one should be aware of what works and what does not in each genre before making a movie, as the plot later determines characters and thus actors.
 
 # <img src="icons/people-group-solid.svg" width="50" height="50">     Actors
 
