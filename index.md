@@ -43,8 +43,8 @@ All previously cited monetary film successes received poor ratings. For instance
 In short: to maximize rating, go for a documentary, and to maximize revenue, go for a family film!
 
 Of course, much more can be said. Genres are visibly clustered on the scatter plot. One can expect similar ratings and revenue among the following groups:
-* Drama, crime-fiction, LGBT, biography and comedy-drama for a mean rating of around 6.3 and revenue just under 200k;
-* Romantic comedy and romantic drama, as well as action/adventure and thriller with a rating close to 6 but revenue around 250k;
+* Drama, crime-fiction, LGBT, biography and comedy-drama for a mean rating of around 6.3 and revenue just under $200k;
+* Romantic comedy and romantic drama, as well as action/adventure and thriller with a rating close to 6 but revenue around $250k;
 * etc.
 
 A word of caution: movie genres are often arbitrarily attributed, thus it is unclear what distinguishes a genre from another. This can have drastic consequences on rating and revenue. For example, the boundary between family drama and romantic drama can be blurry, yet family drama movies are two thirds less profitable than romantic drama movies. There are more precise elements defining a movie, like its cast and plot. Let's analyze the latter now.
