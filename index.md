@@ -17,7 +17,7 @@ Usually movie making pitch questions target the following topics:
 
 **TODO introduce dataset ?**
 
-#  <img src="icons/earth-americas-solid.svg" width="50" height="50">   Country
+#  <img src="icons/earth-americas-solid.svg" width="50" height="50">     Country
 
 Let's start with where you should make and release your movie. 
 
@@ -29,11 +29,11 @@ When examining the mapping between countries and mean ratings, we find our first
 {% include rat_map.html %}
 All previously cited monetary film successes received poor ratings. For instance, _Anaconda_ received 4.8/10. This might also be because it is a horror movie, as we will see later. One could think countries scoring high on rating are big on the World genre, but that is not necessarily true: the award winning drama movie _Pinjar_ was shot in Pakistan, and the crime-drama-thriller _Z_ shot in Algeria was nominated for awards.
 
-# Genres
+# <img src="icons/film-solid.svg" width="50" height="50">      Genres
 
 {% include genres_scatter_plot.html %}
 
-# Actors
+# <img src="icons/people-group-solid.svg" width="50" height="50">     Actors
 ### Why is it important to chose wisely an actor ?
 <img src="actors.jpeg"
      alt="Markdown Monster icon"
