@@ -24,7 +24,7 @@ Let's dive in!
 
 <img src="line.svg"
      alt="Markdown Monster icon"
-     style="display:block; margin-left: auto; margin-right: auto;" />
+     style="display:block; margin-left: auto; margin-right: auto; width=100%"/>
 
 ## <center> - <img src="icons/earth-americas-solid.svg" width="50" height="50">     Country -</center>
 
