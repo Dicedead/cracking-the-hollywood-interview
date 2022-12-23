@@ -73,11 +73,10 @@ However, we notice that the audience doesn't seem to have a large bias on the ac
 The actor's age is one of several factors that can influence a movie's success. For example, an actor who is very young or very old may bring a certain level of credibility or gravitas to a role that helps to make the movie more successful. On the other hand, an actor who is in the prime of their career may be more physically capable of performing action scenes or other demanding roles, which could also contribute to the success of a movie.
 The following plot helps getting more insight on how the movie's revenue and rating change with respect to the actor's age.
 {% include avg_revenue_rating_age.html %}
-{% include age_rating.html %}
-{% include age_revenue.html %}
+{% include age_rating.html include age_revenue.html %}
 We can make the following observations:
-* **Rating :** Actors with either with ages approximately smaller than 10 and higher than 70 tend to contribute in a higher rating. This can be explained by the fact that the audience gets more impressed by a nice performance from actors with uncommonly small age, and unsurpeingly satisfied by well experienced ones.
-* **Revenue :** The same obervation is applied to the revenue contribution. 
+* **Rating :** Actors with either with ages approximately smaller than 10 and higher than 70 tend to contribute in a higher rating. This can be explained by the fact that the audience gets more impressed by a nice performance from actors with uncommonly small age, and unsurpeingly satisfied by well experienced ones. Overall, the average rating encouters a small increase with respect to the age, which again confirms the tendency of preferring well known and experienced actors.
+* **Revenue :** Regarding the revenue, we can see that overall the average revenue slightly decreases compared to the rating. TODO develop  
 
 ## Character types
 Characters are a crucial element of any movie, as they help to drive the story forward and provide a connection for the audience. Strong characters can contribute significantly to the success of a movie by engaging the audience and making them care about what happens to the characters. 
