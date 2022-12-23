@@ -85,7 +85,7 @@ Indeed, some audiences may prefer positive characters who are likable and heroic
 
 We can see that most of the character types tend to have a neutral sentiment. Also, those types were envolved the movies with the highest revenue and rating. However, TODO
 
-## Interactions between actors
+## Interaction between actors
 How do actors interact with each other? Clearly, Will Smith and Chris Rock do not get on well. But what about the others? We have gathered the castings of films and created a graph representing the interactions between actors. Nodes represent actors and edges "has worked with"-relationships. The size of a node is proportional to its degree. Edges are weighted in terms of the number and success of collaborations between two people. Each time two actors played in the same film, the revenue or rating of that movie is added to the weight. 
 
 We set up a graph for each of the 5 most popular genres. A graph contains the casting of the 1000 most successful films in that category. In some cases, there may be groups of actors who usually work together, because of directors' preferences, previous successful films, good synergies, etc. To observe how clusters are distributed in the graph, we apply the Louvain algorithm. Let's take a look at the 'drama' graph!
