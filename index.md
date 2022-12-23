@@ -34,7 +34,9 @@ All previously cited monetary film successes received poor ratings. For instance
 
 # Actors
 ### Why is it important to chose wisely an actor ?
-![text](actors.jpeg){ width=60%,height:30px }
+![text](actors.jpeg){ width=60%,height:30px, align = "center"}  
+
+
 Choosing actors for a successful movie is an important decision that can have a significant impact on the final product.
 Actors are trained to portray a variety of characters and can play different roles in different productions. Acting is a craft that requires skill in understanding and interpreting different characters and their motivations, as well as the ability to convey those characters through speech, movement, and facial expressions. Actors may play different roles in theater, film, television, or other media, and may portray characters of different ages, genders, and cultural backgrounds. Some actors are known for their versatility and are able to play a wide range of characters, while others may specialize in a particular type of role or genre. This motivates our study to find patterns on which type of actors is best suited for a given movie.  
 Here are a few factors to consider when selecting actors for your movie:
