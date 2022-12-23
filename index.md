@@ -22,9 +22,6 @@ After a brief description of our dataset, we will address the question of what m
 
 Let's dive in!
 
-<<<<<<< HEAD
-#  <img src="icons/earth-americas-solid.svg" width="50" height="50">     Country
-=======
 <img src="line.svg"
      alt="Markdown Monster icon"
      style="display:block; margin-left: auto; margin-right: auto; "
@@ -32,7 +29,6 @@ Let's dive in!
 
 ## <center> - <img src="icons/earth-americas-solid.svg" width="50" height="50">     Country -</center>
 
->>>>>>> a5a42417e72866c7e950e31167895f1e8ed6190c
 
 Let's start with where you should make and release your movie. 
 
