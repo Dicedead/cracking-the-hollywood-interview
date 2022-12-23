@@ -22,7 +22,17 @@ After a brief description of our dataset, we will address the question of what m
 
 Let's dive in!
 
+<<<<<<< HEAD
 #  <img src="icons/earth-americas-solid.svg" width="50" height="50">     Country
+=======
+<img src="line.svg"
+     alt="Markdown Monster icon"
+     style="display:block; margin-left: auto; margin-right: auto; "
+     width="100%"/>
+
+## <center> - <img src="icons/earth-americas-solid.svg" width="50" height="50">     Country -</center>
+
+>>>>>>> a5a42417e72866c7e950e31167895f1e8ed6190c
 
 Let's start with where you should make and release your movie. 
 
@@ -88,7 +98,7 @@ The actor's age is one of several factors that can influence a movie's success. 
 The following plot helps getting more insight on how the movie's revenue and rating change with respect to the actor's age.
 {% include avg_revenue_rating_age.html %}
 
-We fit a lign to both revenue and rating distribution to have more information on how they evolve with the actor age.
+We fit a lign to both revenue and rating distribution to have more information on how they evolve with the actor age's change.
 {% include age_rating.html %}{% include age_revenue.html %}
 We can make the following observations:
 * **Rating :** Actors with either with ages approximately smaller than 10 and higher than 70 tend to contribute in a higher rating. This can be explained by the fact that the audience gets more impressed by a nice performance from actors with uncommonly small age, and unsurpeingly satisfied by well experienced ones. Overall, the average rating encouters a small increase with respect to the age, which again confirms the tendency of preferring well known and experienced actors.
