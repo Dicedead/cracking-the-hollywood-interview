@@ -63,14 +63,21 @@ The aim of this part is to perform a linear regression on the movies box office 
 The following plots show the regression coefficient for males and females, which represents the contribution to the revenue and rating respectively.
 {% include gender_influence_revenue.html %}
 
-As we can see, men tend to have slightly higher contribution on the revenue than women. 
+As we can see, men tend to have slightly higher contribution on the revenue than women. One possible reason that men may have been more visible in leading roles in the past is due to the historical imbalance in the entertainment industry, which has been dominated by men. This has resulted in fewer opportunities for women to play leading roles, which may have contributed to the perception that men are more important to the success of a movie.
 
 {% include gender_rating_influence.html %}
+
+However, we notice that the audience doesn't seem to have a large bias on the actors gender when rating movies. A reason may be that spectators usually focus on the movie content and the actors performance rather than their gender. 
 
 ## Age
 The actor's age is one of several factors that can influence a movie's success. For example, an actor who is very young or very old may bring a certain level of credibility or gravitas to a role that helps to make the movie more successful. On the other hand, an actor who is in the prime of their career may be more physically capable of performing action scenes or other demanding roles, which could also contribute to the success of a movie.
 The following plot helps getting more insight on how the movie's revenue and rating change with respect to the actor's age.
 {% include avg_revenue_rating_age.html %}
+{% include age_rating.html %}
+{% include age_revenue.html %}
+We can make the following observations:
+* **Rating :** Actors with either with ages approximately smaller than 10 and higher than 70 tend to contribute in a higher rating. This can be explained by the fact that the audience gets more impressed by a nice performance from actors with uncommonly small age, and unsurpeingly satisfied by well experienced ones.
+* **Revenue :** The same obervation is applied to the revenue contribution. 
 
 ## Character types
 Characters are a crucial element of any movie, as they help to drive the story forward and provide a connection for the audience. Strong characters can contribute significantly to the success of a movie by engaging the audience and making them care about what happens to the characters. 
