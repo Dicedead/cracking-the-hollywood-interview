@@ -11,6 +11,7 @@ This motivates our goal of studying the successful and failed films in terms of 
 
 Usually movie making interview questions target the following topics: 
 * The country where the movie should be made in.
+* The genre of the movie.
 * The actors that should play in the movie.
 * How to write the movie plot.
 
@@ -20,6 +21,10 @@ Usually movie making interview questions target the following topics:
 
 {% include rev_map.html %}
 {% include rat_map.html %}
+
+# Genres
+
+{% include genres_scatter_plot.html %}
 
 # Actors
 Choosing actors for a successful movie is an important decision that can have a significant impact on the final product. Here are a few factors to consider when selecting actors for your movie:
