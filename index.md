@@ -22,6 +22,9 @@ After a brief description of our dataset, we will address the question of what m
 
 Let's dive in!
 
+<img src="line.svg"
+     alt="Markdown Monster icon"
+     style="display:block; margin-left: auto; margin-right: auto;" />
 
 ## <center> - <img src="icons/earth-americas-solid.svg" width="50" height="50">     Country -</center>
 
