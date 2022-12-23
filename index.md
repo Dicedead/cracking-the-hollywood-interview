@@ -1,7 +1,7 @@
 ---
 layout: generic
 ---
-# Why it is important to prepare before a movie pitch
+# Why it is important to prepare the Hollywood interview
 Let's say you are already bored of cracking the coding interview. You have crushed all your interviews at Big Tech companies and want new challenges. For that reason, you have an interview next week with a Hollywood executive producer where you are going to conceptualize a new movie. You have to come up with a film from scratch and you don't know where to start. This time, you have carefully think about and explain your choices. There is a lot of money involved: on average, the production of a major box office movie costs [$65 million](https://www.investopedia.com/financial-edge/0611/why-movies-cost-so-much-to-make.aspx), without counting the marketing and distribution fees. 
 
 > It is brain surgery! It is bloody brain surgery! You’re putting together a whole group of people, you’re trying to budget as accurately as you can and, at the end of it, you’ve got to sell a lot of tickets. That’s more complex than banking ...I’m not kidding myself: I love the challenge. If you don’t, don’t do the job.
