@@ -40,7 +40,7 @@ All previously cited monetary film successes received poor ratings. For instance
 {% include genres_scatter_plot.html %}
 In short: to maximize rating, go for a documentary, and to maximize revenue, go for a family film!
 
-Of course, much more can be said. Genres are visibly clustered on the scatter plot. One can expect similar ratingsm and revenue among the following groups:
+Of course, much more can be said. Genres are visibly clustered on the scatter plot. One can expect similar ratings and revenue among the following groups:
 * Drama, crime-fiction, LGBT, biography and comedy-drama for a mean rating of around 6.3 and revenue just under 200k;
 * Romantic comedy and romantic drama, as well as action/adventure and thriller with a rating close to 6 but revenue around 250k;
 * etc.
@@ -247,4 +247,4 @@ That said, zoom in on the blue cluster at the centre of the graph. It is located
 
 Going back to actors, we observe in that cluster the presence of Hollywood stars such as Robert De Niro. They have considerably higher degrees than other artists in the same cluster. For instance, when we click over small nodes, such as Chris Sarandon, we notice that they have interacted with few people and are usually from the same cluster. However, when we click over the node of De Niro, we can observe a large number of other artists he has cooperated with. He is a bridge between many groups of actors, as he has been a relevant actor in the industry for many decades, and even connects a cluster of different generations. 
 
-We let you play with the different graphs for the most popular genres. Once you have chosen many parameters for your movie and now have to select a casting, you may find some inspiration from actors that have previously worked well together in the graphs. Or if you are obsessed with an actor, and no matter what he or she will be the protagonist of your film, you can search for their name and analyze their previous cooperations with other artists that could complete your cast!
+We let you play with the different graphs for the most popular genres. Once you have chosen many parameters for your movie and now have to select a casting, you may find some inspiration from actors that have previously worked well together from the graphs. Or if you are obsessed with an actor, and no matter what he or she will be the protagonist of your film, you can search for their name and analyze their previous cooperations with other artists that could complete your cast!
