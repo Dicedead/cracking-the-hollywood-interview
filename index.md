@@ -65,7 +65,7 @@ A word of caution: movie genres are often arbitrarily attributed, thus it is unc
 
 
 ## Plots
-When they come to the movie theater, viewers have some expectations regarding the movie's plot. These expectations are due to movies portraying the same kinds of events accross genres. Thus, for each genre, we have separated movies with high/low revenue and high/low rating; formally: the top and bottom 10% of movies for each metric, then we have run topic detection on their plot summaries to see what do successful/unsuccessful movies with respect to each metric display. Let's look at the results for a few genres!
+When they come to the movie theater, viewers have some expectations regarding the movie's plot. These expectations are due to movies portraying the same kinds of events across genres. Thus, for each genre, we have separated movies with high/low revenue and high/low rating; formally: the top and bottom 10% of movies for each metric, then we have run topic detection on their plot summaries to see what do successful/unsuccessful movies with respect to each metric display. Let's look at the results for a few genres!
 
 <form>
 	<input type="radio" id="iframe1_c" name="plot_radio" value="iframe1_c" checked>
@@ -196,7 +196,7 @@ When they come to the movie theater, viewers have some expectations regarding th
     }
 </script>
 
-Take action films when compared by rating for example. The second successful topic is set in the Batman universe, and the third one in the Bourne universe, two esteemed franchises both by critics and the grand public. It makes sense that they beat action stories with boats and ships, as mentionned in the third less highly rated topic, and plots about crooks, heists and gamblers. Note that Batman and Bond movies are also among the most successful topics in action in terms of revenue too!
+Take action films when compared by rating for example. The second most successful topic is set in the Batman universe, and the third one in the Bourne universe, two esteemed franchises both by critics and the public. It makes sense that they beat action stories with boats and ships, as mentioned in the third less highly rated topic, and plots about crooks, heists and gamblers. Note that Batman and Bond movies are also among the most successful topics in action in terms of revenue too!
 
 Similar observations can be made for any genre - one should be aware of what works and what does not in each genre before making a movie, as the plot later determines characters and thus actors.
 
@@ -209,12 +209,12 @@ Similar observations can be made for any genre - one should be aware of what wor
      style="display:block; margin-left: auto; margin-right: auto;" />
 
 
-Choosing actors for a successful movie is an important decision that can have a significant impact on the final product.
-Actors are trained to portray a variety of characters and can play different roles in different productions. Acting is a craft that requires skill in understanding and interpreting different characters and their motivations, as well as the ability to convey those characters through speech, movement, and facial expressions. Actors may play different roles in theater, film, television, or other media, and may portray characters of different ages, genders, and cultural backgrounds. Some actors are known for their versatility and are able to play a wide range of characters, while others may specialize in a particular type of role or genre. This motivates our study to find patterns on which type of actors is best suited for a given movie.  
+The casting of actors is an important decision that can have a significant impact on the movie.
+Actors are trained to portray a variety of characters and can play different roles in different productions. Acting is a craft that requires skill in understanding and interpreting different characters and their motivations, as well as the ability to convey those characters through speech, movement, and facial expressions. Actors may play different roles in theater, film, television, or other media, and may portray characters of different ages, genders, and cultural backgrounds. Some actors are known for their versatility and are able to play a wide range of characters, while others may specialize in a particular type of role or genre. This motivates our study to find patterns on which type of actor is best suited for a given movie.  
 Here are a few factors to consider when selecting actors for your movie:
 
 ## Gender
-Usually people tend to say that there is no one "right" answer when it comes to choosing actors based on their gender for a successful movie. However, studying the effect of actor genders on the revenue and rating gave interesting results.
+Usually, people tend to say that there is no one "right" answer when it comes to choosing actors based on their gender for a successful movie. However, studying the effect of actor genders on the revenue and rating gave interesting results.
 The aim of this part is to perform a linear regression on the movies box office revenue and rating. We want to investigate the degree to which the actor's gender predicts the change of the movie revenue and rating. 
 The following plots show the regression coefficient for males and females, which represents the contribution to the revenue and rating respectively.
 {% include gender_influence_revenue.html %}
