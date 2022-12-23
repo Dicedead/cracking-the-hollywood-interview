@@ -22,7 +22,6 @@ After a brief description of our dataset, we will address the question of what m
 
 Let's dive in!
 
-
 #  <img src="icons/earth-americas-solid.svg" width="50" height="50">     Country
 
 Let's start with where you should make and release your movie. 
@@ -47,6 +46,11 @@ Of course, much more can be said. Genres are visibly clustered on the scatter pl
 * etc.
 
 A word of caution: movie genres are often arbitrarily attributed, thus it is unclear what distinguishes a genre from another. This can have drastic consequences on rating and revenue. For example, the boundary between family drama and romantic drama can be blurry, yet family drama movies are two thirds less profitable than romantic drama movies. There are more precise elements defining a movie, like its cast and plot. Let's analyze the latter now.
+
+<img src="line.svg"
+     alt="Markdown Monster icon"
+     style="display:block; margin-left: auto; margin-right: auto" />
+
 
 # Plots
 When they come to the movie theater, viewers have some expectations regarding the movie's plot. These expectations are due to movies portraying the same kinds of events accross genres. Thus, for each genre, we have separated movies with high/low revenue aand high/low rating; formally: the top and bottom 10% of movies for each metric, then we have run topic detection on their plot summaries to see what do successful/unsuccessful movies with respect to each metric display.  Let's look at the results for a few genres!
