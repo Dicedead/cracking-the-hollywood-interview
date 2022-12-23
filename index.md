@@ -20,8 +20,8 @@ This motivates our goal of studying the successful and failed films in terms of 
 Usually movie making pitch questions target the following topics: 
 * The country where the movie should be made in.
 * The genre of the movie.
-* The actors that should play in the movie.
 * The movie's plot.
+* The movie's cast.
 
 **TODO introduce dataset ?**
 
@@ -48,8 +48,12 @@ Of course, much more can be said. Genres are visibly clustered on the scatter pl
 * Romantic comedy and romantic drama, as well as action/adventure and thriller with a rating close to 6 but revenue around 250k;
 * etc.
 
-A word of caution: movie genres are often arbitrarily attributed, thus it is unclear what distinguishes a genre from another. This can have drastic consequences on rating and revenue. For example, the boundary between family drama and romantic drama can be blurry, yet family drama movies are two thirds less profitable than romantic drama movies. There are more precise elements defining a movie, like its cast.
+A word of caution: movie genres are often arbitrarily attributed, thus it is unclear what distinguishes a genre from another. This can have drastic consequences on rating and revenue. For example, the boundary between family drama and romantic drama can be blurry, yet family drama movies are two thirds less profitable than romantic drama movies. There are more precise elements defining a movie, like its cast and plot. Let's analyze the latter now.
 
+# Plots
+When they come to the movie theater, viewers have some expectations regarding the movie's plot. These expectations are due to movies portraying the same kinds of events accross genres. Thus, for each genre, we have separated movies with high/low revenue aand high/low rating; formally: the top and bottom 10% of movies for each metric, then we have run topic detection on their plot summaries to see what do successful/unsuccessful movies with respect to each metric display.  Let's look at the results for a few genres!
+
+{% include plot_division.html %}
 
 
 # <img src="icons/people-group-solid.svg" width="50" height="50">     Actors
@@ -106,7 +110,7 @@ How do actors interact with each other? Clearly, Will Smith and Chris Rock do no
 
 We set up a graph for each of the 5 most popular genres. A graph contains the casting of the 1000 most successful films in that category. In some cases, there may be groups of actors who usually work together, because of directors' preferences, previous successful films, good synergies, etc. To observe how clusters are distributed in the graph, we apply the Louvain algorithm. Let's take a look at the 'drama' graph!
 
-First, let's choose "Drama by revenue" among the options below. It contains the actors that have played in the top 1000 drama movies ranked by box office revenue. Have you watched "The Godfather"? If not, we strongly recommend you cancel all your activities for today and turn on the TV to watch this fantastic trilogy! But before that, finish reading this story, please! 
+First, let's choose "Drama by revenue" among the options below. It contains the actors that have played in the top 1000 drama movies ranked by box office revenue. Have you watched "The Godfather"? If not, we strongly recommend you cancel all your activities for today and turn on the TV to watch this fantastic trilogy! But before that, finish reading this story, please!
 
 That said, zoom in on the blue cluster at the centre of the graph. It is located below the grey-blue one and above the two green groups. There, you may notice the names of famous actors, such as Robert De Niro, Robert Duvall, Al Pacino and Diane Keaton. All of them appear in the Godfather saga. The first film became the highest-grossing film ever in 1972, and the two sequels were very successful too. Similarly, this cluster also appears in the "Drama by ranking" graph, considering that the saga has also been one of the most acclaimed stories of all time! 
 
