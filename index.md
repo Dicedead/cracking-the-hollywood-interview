@@ -228,8 +228,7 @@ Characters are a crucial element of any movie, as they help to drive the story f
 
 ### Sentiment analysis
 Sentiment analysis, also known as opinion mining, is a field of natural language processing that involves analyzing text data to determine whether it conveys a positive, negative, or neutral sentiment. We used this technique to measure the sentiments of the character types embodied in movies. The analysis returns a sentiment score that is a value between -1 and 1, where -1 is very negative, 0 is neutral and 1 is very positive. 
-For example:
-* "arrogant kungfu guy" yields a negative sentiment due to the presence of the word "arrogant"  
+For example,"arrogant kungfu guy" yields a negative sentiment due to the presence of the word "arrogant".
 Indeed, some audiences may prefer positive characters who are likable and heroic, while others may be more drawn to complex and flawed characters who are more realistic and relatable. To have better insight, we have plotted the sentiment score of 72 character types drawn from tvtropes.com as well as the median rating and revenue of the movies they were envolved in.
 
 {% include rating_revenue_per_char_type.html %}
@@ -241,9 +240,9 @@ How do actors interact with each other? Clearly, Will Smith and Chris Rock do no
 
 We set up a graph for each of the 5 most popular genres. A graph contains the casting of the 1000 most successful films in that category. In some cases, there may be groups of actors who usually work together, because of directors' preferences, previous successful films, good synergies, etc. To observe how clusters are distributed in the graph, we apply the Louvain algorithm. Let's take a look at the 'drama' graph!
 
-First, let's choose "Drama by revenue" among the options below. It contains the actors that have played in the top 1000 drama movies ranked by box office revenue. Have you watched "The Godfather"? If not, we strongly recommend you cancel all your activities for today and turn on the TV to watch this fantastic trilogy! But before that, finish reading this story, please!
+First, let's choose "Drama by revenue" among the options below. It contains the actors that have played in the top 1000 drama movies ranked by box office revenue. Have you watched _The Godfather_? If not, we strongly recommend you cancel all your activities for today and turn on the TV to watch this fantastic trilogy! But before that, finish reading this story, please!
 
-That said, zoom in on the blue cluster at the centre of the graph. It is located below the grey-blue one and above the two green groups. There, you may notice the names of famous actors, such as Robert De Niro, Robert Duvall, Al Pacino and Diane Keaton. All of them appear in the Godfather saga. The first film became the highest-grossing film ever in 1972, and the two sequels were very successful too. Similarly, this cluster also appears in the "Drama by ranking" graph, considering that the saga has also been one of the most acclaimed stories of all time! 
+That said, zoom in on the blue cluster at the centre of the graph. It is located below the grey-blue one and above the two green groups. There, you may notice the names of famous actors, such as Robert De Niro, Robert Duvall, Al Pacino and Diane Keaton. All of them appear in the _Godfather_ saga. The first film became the highest-grossing film ever in 1972, and the two sequels were very successful too. Similarly, this cluster also appears in the "Drama by ranking" graph, considering that the saga has also been one of the most acclaimed stories of all time! 
 
 Going back to actors, we observe in that cluster the presence of Hollywood stars such as Robert De Niro. They have considerably higher degrees than other artists in the same cluster. For instance, when we click over small nodes, such as Chris Sarandon, we notice that they have interacted with few people and are usually from the same cluster. However, when we click over the node of De Niro, we can observe a large number of other artists he has cooperated with. He is a bridge between many groups of actors, as he has been a relevant actor in the industry for many decades, and even connects a cluster of different generations. 
 
