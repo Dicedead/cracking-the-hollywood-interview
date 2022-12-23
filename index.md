@@ -22,13 +22,7 @@ After a brief description of our dataset, we will address the question of what m
 
 Let's dive in!
 
-<img src="countries.svg"
-     alt="Markdown Monster icon"
-     style="display:block; margin-left: auto; margin-right: auto; "
-     width="100%"/>
-
-## Country
-
+<img src="countries.png" width="100%"/>
 
 Let's start with where you should make and release your movie. 
 
@@ -40,12 +34,7 @@ When examining the mapping between countries and mean ratings, we find our first
 {% include rat_map.html %}
 All previously cited monetary film successes received poor ratings. For instance, _Anaconda_ got 4.8/10. This might also be because it is a horror movie, as we will see later. One could think countries scoring high on rating are big on the World genre, but that is not necessarily true: the award winning drama movie _Pinjar_ was shot in Pakistan, and the crime-drama-thriller _Z_ shot in Algeria was nominated for awards.
 
-<img src="genres.svg"
-     alt="Markdown Monster icon"
-     style="display:block; margin-left: auto; margin-right: auto; "
-     width="100%"/>
-
-## Genres
+<img src="genres.png" width="100%"/>
 
 ### How do rating and revenue vary as a function of the genre?
 {% include genres_scatter_plot.html %}
@@ -58,13 +47,8 @@ Of course, much more can be said. Genres are visibly clustered on the scatter pl
 
 A word of caution: movie genres are often arbitrarily attributed, thus it is unclear what distinguishes a genre from another. This can have drastic consequences on rating and revenue. For example, the boundary between family drama and romantic drama can be blurry, yet family drama movies are two thirds less profitable than romantic drama movies. There are more precise elements defining a movie, like its cast and plot. Let's analyze the latter now.
 
-<img src="plots.svg"
-     alt="Markdown Monster icon"
-     style="display:block; margin-left: auto; margin-right: auto; "
-     width="100%"/>
+<img src="plots.png" width="100%"/>
 
-
-## Plots
 When they come to the movie theater, viewers have some expectations regarding the movie's plot. These expectations are due to movies portraying the same kinds of events accross genres. Thus, for each genre, we have separated movies with high/low revenue and high/low rating; formally: the top and bottom 10% of movies for each metric, then we have run topic detection on their plot summaries to see what do successful/unsuccessful movies with respect to each metric display. Let's look at the results for a few genres!
 
 <form>
@@ -200,13 +184,16 @@ Take action films when compared by rating for example. The second successful top
 
 Similar observations can be made for any genre - one should be aware of what works and what does not in each genre before making a movie, as the plot later determines characters and thus actors.
 
-# <img src="icons/people-group-solid.svg" width="50" height="50">     Actors
+<img src="actors.png" width="100%"/>
 
 ### Why is it important to wisely choose your cast?
 
 <img src="actors.jpeg"
      alt="Markdown Monster icon"
-     style="display:block; margin-left: auto; margin-right: auto;" />
+     style="display:block; margin-left: auto; margin-right: auto; " 
+     width="25%" 
+     height="25%" 
+     />
 
 
 Choosing actors for a successful movie is an important decision that can have a significant impact on the final product.
@@ -260,4 +247,4 @@ That said, zoom in on the blue cluster at the centre of the graph. It is located
 
 Going back to actors, we observe in that cluster the presence of Hollywood stars such as Robert De Niro. They have considerably higher degrees than other artists in the same cluster. For instance, when we click over small nodes, such as Chris Sarandon, we notice that they have interacted with few people and are usually from the same cluster. However, when we click over the node of De Niro, we can observe a large number of other artists he has cooperated with. He is a bridge between many groups of actors, as he has been a relevant actor in the industry for many decades, and even connects a cluster of different generations. 
 
-We let you play with the different graphs for the most popular genres. Once you have chosen many parameters for your movie and now have to select a casting, you may find some inspiration from actors that have previously worked well together in the graphs. Or if you are obsessed with an actor, and no matter what he or she will be the protagonist of your film, you can search for their name and analyze their previous cooperations with other artists that could complete your casting!
+We let you play with the different graphs for the most popular genres. Once you have chosen many parameters for your movie and now have to select a casting, you may find some inspiration from actors that have previously worked well together in the graphs. Or if you are obsessed with an actor, and no matter what he or she will be the protagonist of your film, you can search for their name and analyze their previous cooperations with other artists that could complete your cast!
