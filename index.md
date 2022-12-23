@@ -81,10 +81,12 @@ However, we notice that the audience doesn't seem to have a large bias on the ac
 The actor's age is one of several factors that can influence a movie's success. For example, an actor who is very young or very old may bring a certain level of credibility or gravitas to a role that helps to make the movie more successful. On the other hand, an actor who is in the prime of their career may be more physically capable of performing action scenes or other demanding roles, which could also contribute to the success of a movie.
 The following plot helps getting more insight on how the movie's revenue and rating change with respect to the actor's age.
 {% include avg_revenue_rating_age.html %}
+
+We fit a lign to both revenue and rating distribution to have more information on how they evolve with the actor age.
 {% include age_rating.html %}{% include age_revenue.html %}
 We can make the following observations:
 * **Rating :** Actors with either with ages approximately smaller than 10 and higher than 70 tend to contribute in a higher rating. This can be explained by the fact that the audience gets more impressed by a nice performance from actors with uncommonly small age, and unsurpeingly satisfied by well experienced ones. Overall, the average rating encouters a small increase with respect to the age, which again confirms the tendency of preferring well known and experienced actors.
-* **Revenue :** Regarding the revenue, we can see that overall the average revenue slightly decreases compared to the rating. TODO develop  
+* **Revenue :** Regarding the revenue, we can see that overall the average revenue slightly decreases compared to the rating. A probable reason can be the fact that the studied movies and the films in general target mainly youths. This category of the population might relate more to actors who are closer to their own age and may be able to better understand the experiences and challenges depicted on screen. Moreover, they are exposed to actors through social media, music, and other mediums, which can make them more familiar and more appealing. It is also possible that some young people might prefer young actors simply because they find them physically attractive. Thus, they tend to spend more money on buying tickets for this kind of movies. 
 
 ## Character types
 Characters are a crucial element of any movie, as they help to drive the story forward and provide a connection for the audience. Strong characters can contribute significantly to the success of a movie by engaging the audience and making them care about what happens to the characters. 
@@ -97,7 +99,7 @@ Indeed, some audiences may prefer positive characters who are likable and heroic
 
 {% include rating_revenue_per_char_type.html %}
 
-We can see that most of the character types tend to have a neutral sentiment. Also, those types were envolved the movies with the highest revenue and rating. However, TODO
+We can see that most of the character types tend to have a neutral or positive sentiment scores. Also, those types were envolved the movies with the highest revenue and rating. However, the rating variable seems to be quite uncorrelated to the sentiment since we can find pretty much all the types in both high and low means.
 
 ## Interaction between actors
 How do actors interact with each other? Clearly, Will Smith and Chris Rock do not get on well. But what about the others? We have gathered the castings of films and created a graph representing the interactions between actors. Nodes represent actors and edges "has worked with"-relationships. The size of a node is proportional to its degree. Edges are weighted in terms of the number and success of collaborations between two people. Each time two actors played in the same film, the revenue or rating of that movie is added to the weight. 
