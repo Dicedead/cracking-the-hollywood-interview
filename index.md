@@ -228,14 +228,8 @@ Characters are a crucial element of any movie, as they help drive the story forw
 
 ### Sentiment analysis
 Sentiment analysis, also known as opinion mining, is a field of natural language processing that involves analyzing text data to determine whether it conveys a positive, negative, or neutral sentiment. We used this technique to measure the sentiments of the character types embodied in movies. The analysis returns a sentiment score that is a value between -1 and 1, where -1 is very negative, 0 is neutral and 1 is very positive. 
-<<<<<<< HEAD
-For example,"arrogant kungfu guy" yields a negative sentiment due to the presence of the word "arrogant".
-Indeed, some audiences may prefer positive characters who are likable and heroic, while others may be more drawn to complex and flawed characters who are more realistic and relatable. To have better insight, we have plotted the sentiment score of 72 character types drawn from tvtropes.com as well as the median rating and revenue of the movies they were envolved in.
-=======
-For example:
-* "arrogant kungfu guy" yields a negative sentiment due to the presence of the word "arrogant"  
+For example, "arrogant kungfu guy" yields a negative sentiment due to the presence of the word "arrogant"  
 Indeed, some audiences may prefer positive characters who are likable and heroic, while others may be more drawn to complex and flawed characters who are more realistic and relatable. To have better insight, we have plotted the sentiment score of 72 character types drawn from tvtropes.com as well as the median rating and revenue of the movies they were involved in.
->>>>>>> 5c59a6bff79bdcd2c06fbecd8d07896d38729751
 
 {% include rating_revenue_per_char_type.html %}
 
